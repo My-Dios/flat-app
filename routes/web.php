@@ -11,6 +11,19 @@
 |
 */
 
+// Route Without Data
 Route::get('/', function () {
     return view('layouts.homefox');
+});
+
+Route::get('/about', function () {
+    return view('layouts.aboutfox');
+});
+
+Route::get('/course', function () {
+    return view('layouts.coursefox');
+});
+
+Route::get('/news', function () {
+    return view('layouts.newsfox');
 });
