@@ -46,10 +46,7 @@
         </form>
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav mr-auto">
-	        	<li class="nav-item"><a href="/" class="nav-link">Home</a></li>
-	        	<li class="nav-item"><a href="/about" class="nav-link">About</a></li>
-	        	<li class="nav-item"><a href="/course" class="nav-link">Courses</a></li>
-	        	<li class="nav-item"><a href="/news" class="nav-link">News</a></li>
+	        	@yield('navbar')
 	        </ul>
 	      </div>
 	</div>

@@ -4,6 +4,12 @@
     Course UKM Bahasa-FLAT UIN Jakarta
 @endsection
 
+@section('navbar')
+    <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+	<li class="nav-item active"><a href="/course" class="nav-link">Courses</a></li>
+	<li class="nav-item"><a href="/news" class="nav-link">News</a></li>
+@endsection
+
 @section('content')
     {{-- START jumbotron --}}
     <section class="hero-wrap hero-wrap-2" style="background-image: url('{{asset('foxtl/images/bg_1.jpg')}}');">

@@ -4,6 +4,12 @@
     Home UKM Bahasa-FLAT UIN Jakarta
 @endsection
 
+@section('navbar')
+    <li class="nav-item active"><a href="/" class="nav-link">Home</a></li>
+	<li class="nav-item"><a href="/course" class="nav-link">Courses</a></li>
+	<li class="nav-item"><a href="/news" class="nav-link">News</a></li>
+@endsection
+
 @section('content')
     <!-- START jumbotron -->
     <section class="home-slider owl-carousel">
@@ -237,6 +243,24 @@
     	</div>
     </section>
     {{-- END Desc --}}
+
+    {{-- START Desc 2 --}}
+    <section class="ftco-section ftco-no-pt ftc-no-pb">
+			<div class="container">
+				<div class="row d-flex">
+                    <div class="col-md-7 wrap-about py-5 pr-md-4 ftco-animate fadeInUp ftco-animated">
+          	            <h2 class="mb-4">Fox University Stablished Since 1960</h2>
+						<p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word.</p>
+						<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+						<p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country. But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their</p>
+					</div>
+					<div class="col-md-5 order-md-last wrap-about wrap-about d-flex align-items-stretch">
+						<div class="img" style="background-image: url({{asset('foxtl/images/about.jpg')}}); border"></div>
+					</div>
+				</div>
+			</div>
+	</section>
+    {{-- END Desc 2 --}}
 
     {{-- START Course --}}
 	<section class="ftco-section">
@@ -566,4 +590,41 @@
       </div>
     </section>
     {{-- END Testimoni --}}
+
+    {{-- START galery --}}
+	<section class="ftco-gallery">
+    	<div class="container-wrap">
+    		<div class="row no-gutters">
+					<div class="col-md-3 ftco-animate">
+						<a href="{{asset('foxtl/images/image_1.jpg')}}" class="gallery image-popup img d-flex align-items-center" style="background-image: url({{asset('foxtl/images/course-1.jpg')}});">
+							<div class="icon mb-4 d-flex align-items-center justify-content-center">
+    						<span class="icon-instagram"></span>
+    					</div>
+						</a>
+					</div>
+					<div class="col-md-3 ftco-animate">
+						<a href="{{asset('foxtl/images/image_2.jpg')}}" class="gallery image-popup img d-flex align-items-center" style="background-image: url({{asset('foxtl/images/image_2.jpg')}});">
+							<div class="icon mb-4 d-flex align-items-center justify-content-center">
+    						<span class="icon-instagram"></span>
+    					</div>
+						</a>
+					</div>
+					<div class="col-md-3 ftco-animate">
+						<a href="{{asset('foxtl/images/image_3.jpg')}}" class="gallery image-popup img d-flex align-items-center" style="background-image: url({{asset('foxtl/images/image_3.jpg')}});">
+							<div class="icon mb-4 d-flex align-items-center justify-content-center">
+    						<span class="icon-instagram"></span>
+    					</div>
+						</a>
+					</div>
+					<div class="col-md-3 ftco-animate">
+						<a href="{{asset('foxtl/images/image_4.jpg')}}" class="gallery image-popup img d-flex align-items-center" style="background-image: url({{asset('foxtl/images/image_4.jpg')}});">
+							<div class="icon mb-4 d-flex align-items-center justify-content-center">
+    						<span class="icon-instagram"></span>
+    					</div>
+						</a>
+					</div>
+        </div>
+    	</div>
+    </section>
+    {{-- END galery --}}
 @endsection
