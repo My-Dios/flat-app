@@ -24,6 +24,14 @@ Route::get('/course', function () {
     return view('layouts.coursefox');
 });
 
-Route::get('/news', function () {
-    return view('layouts.newsfox');
-});
+
+// Route::get('/admin', function () {
+//     return view('layoutsadmin.homeadmin');
+// });
+
+// Route News
+Route::get('/admin/createnews', 'newsController@create');
+Route::post('/admin/createnews', 'newsController@store');
+Route::get('/admin', 'newsController@index');
+Route::get('/news', 'newsController@indexnews');
+Route::delete('/admin/{id}', 'newsController@destroy');
