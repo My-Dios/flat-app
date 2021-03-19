@@ -186,7 +186,8 @@
     			<div class="col-md-6 align-items-stretch d-flex">
     				<div class="img img-video d-flex align-items-center" style="background-image: url({{asset('img/botak.jpeg')}});">
     					<div class="video justify-content-center">
-								<a href="https://www.youtube.com/watch?v=QNpaXGrhZ_s" class="icon-video popup-vimeo d-flex justify-content-center align-items-center">
+
+								<a href="https://www.youtube.com/watch?v=psFxjZHUiIw" class="icon-video popup-vimeo d-flex justify-content-center align-items-center">
 									<span class="ion-ios-play"></span>
 		  					</a>
 							</div>

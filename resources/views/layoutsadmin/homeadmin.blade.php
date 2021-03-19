@@ -35,18 +35,18 @@
                                         <tr>
                                             <td align='center'>{{$key + 1}}</td>
                                             <td>{{$post->title}}</td>
-                                            <td>{{$post->openingsentence}}</td>
-                                            <td>{{$post->description}}</td>
+                                            <td>{{substr($post->openingsentence, 0, 35)}}...</td>
+                                            <td class="card-text">{{substr($post->description, 0, 50)}}...</td>
                                             <td align='center'>
-                                                <img style="width: 100px;" src="/uploads/news/{{$post->picture}}" alt="{{{$post->title}}}" class="card-img-top"/>
+                                                <img style="width: 100px;" src="/uploads/news/{{$post->picture}}" alt="{{$post->title}}" class="card-img-top"/>
                                             </td>
-                                            <td style="display:flex">
-                                                <a href="/admin/{{$post->id}}" class="btn btn-info btn-sm mr-1">Show</a>
-                                                <a href="/admin/{{$post->id}}/edit" class="btn btn-default btn-sm mr-1">Edit</a>
+                                            <td align='center'>
+                                                <a href="/news/{{$post->id}}" class="btn btn-info btn-sm mb-2 pl-3 pr-3">Show</a>
+                                                <a href="/admin/{{$post->id}}/edit" class="btn btn-default btn-sm mb-2 pl-3 pr-3">Edit</a>
                                                 <form action="/admin/{{$post->id}}" method="post">
                                                 @csrf
                                                 @method('DELETE')
-                                                    <input type="submit" value="Delete" class="btn btn-danger btn-sm mr-1">
+                                                    <input type="submit" value="Delete" class="btn btn-danger btn-sm mb-2">
                                                 </form>
                                             </td>
                                         </tr>

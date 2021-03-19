@@ -17,15 +17,21 @@ class newsController extends Controller
      */
     public function index()
     {
-        $post = Berita::all();
+        $post= Berita::orderBy('created_at','desc')->get();
         return view('layoutsadmin.homeadmin', compact('post'));
     }
 
     public function indexnews()
     {
-        $post = Berita::all();
+        $post= Berita::orderBy('created_at','desc')->get();
         return view('layouts.newsfox', compact('post'));
     }
+
+    // public function indexnewsfooter()
+    // {
+    //     $post= Berita::orderBy('created_at','desc')->limit(2)->get();
+    //     return view('foxtl.foxmaster', compact('post'));
+    // }
 
     /**
      * Show the form for creating a new resource.
@@ -68,7 +74,8 @@ class newsController extends Controller
      */
     public function show($id)
     {
-
+        $post = Berita::find($id);
+        return view('layouts.detailnewsfox', compact('post'));
     }
 
     /**
@@ -79,7 +86,8 @@ class newsController extends Controller
      */
     public function edit($id)
     {
-        //
+        $post = Berita::find($id);
+        return view('layoutsadmin.editnews', compact('post'));
     }
 
     /**
@@ -91,7 +99,17 @@ class newsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $gambar = $request->picture;
+        $new_gambar = time() . ' . ' . $gambar->getClientOriginalName();
+
+        $update = Berita::where("id", $id)-> update([
+           "title" => $request["title"],
+            "openingsentence" => $request["openingsentence"],
+            "description" => $request["description"],
+            'picture' => $new_gambar,
+        ]);
+        $gambar->move('uploads/news/',$new_gambar);
+        return redirect('/admin');
     }
 
     /**
