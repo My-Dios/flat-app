@@ -15,7 +15,6 @@
 Route::get('/', function () {
     return view('layouts.homefox');
 });
-// layouts.homefox
 
 Route::get('/about', function () {
     return view('layouts.aboutfox');

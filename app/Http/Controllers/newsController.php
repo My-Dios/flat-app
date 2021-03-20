@@ -52,6 +52,13 @@ class newsController extends Controller
     public function store(Request $request)
     {
         // dd($request->all());
+        // $request->validate([
+        //     "title" => 'required',
+        //     "openingsentence" => 'required',
+        //     "description" => 'required',
+        //     'picture' => 'required'
+        // ]);
+
         $gambar = $request->picture;
         $new_gambar = time() . ' . ' . $gambar->getClientOriginalName();
 

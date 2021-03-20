@@ -12,11 +12,7 @@
 
 @section('content')
 {{-- START jumbotron --}}
-    {{-- @forelse($post as $key => $post) --}}
-    {{-- <section class="hero-wrap hero-wrap-2" style="background-image: url('/uploads/news/{{$post->picture}}');"> --}}
-    {{-- @empty --}}
     <section class="hero-wrap hero-wrap-2" style="background-image: url('{{asset('foxtl/images/bg_1.jpg')}}');">
-    {{-- @endforelse --}}
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center">
