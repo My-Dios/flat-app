@@ -12,9 +12,7 @@
 */
 
 // Route Without Data
-Route::get('/', function () {
-    return view('layouts.homefox');
-});
+Route::get('/', 'newsController@indexhome');
 
 Route::get('/about', function () {
     return view('layouts.aboutfox');

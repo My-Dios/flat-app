@@ -293,64 +293,182 @@
 
     {{-- START Course --}}
 	<section class="ftco-section">
-			<div class="container-fluid px-4">
-				<div class="row justify-content-center mb-5 pb-2">
-          <div class="col-md-8 text-center heading-section ftco-animate">
-            <h2 class="mb-4"><span>Our</span> Courses</h2>
-            <p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
-          </div>
-        </div>
-				<div class="row">
-					<div class="col-md-3 course ftco-animate">
-						<div class="img" style="background-image: url({{asset('foxtl/images/course-1.jpg')}});"></div>
-						<div class="text pt-4">
-							<p class="meta d-flex">
-								<span><i class="icon-user mr-2"></i>Mr. Khan</span>
-								<span><i class="icon-table mr-2"></i>10 seats</span>
-								<span><i class="icon-calendar mr-2"></i>4 Years</span>
-							</p>
-							<h3><a href="#">Electric Engineering</a></h3>
-							<p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
-						</div>
-					</div>
-					<div class="col-md-3 course ftco-animate">
-						<div class="img" style="background-image: url({{asset('foxtl/images/course-2.jpg')}});"></div>
-						<div class="text pt-4">
-							<p class="meta d-flex">
-								<span><i class="icon-user mr-2"></i>Mr. Khan</span>
-								<span><i class="icon-table mr-2"></i>10 seats</span>
-								<span><i class="icon-calendar mr-2"></i>4 Years</span>
-							</p>
-							<h3><a href="#">Electric Engineering</a></h3>
-							<p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
-						</div>
-					</div>
-					<div class="col-md-3 course ftco-animate">
-						<div class="img" style="background-image: url({{asset('foxtl/images/course-3.jpg')}});"></div>
-						<div class="text pt-4">
-							<p class="meta d-flex">
-								<span><i class="icon-user mr-2"></i>Mr. Khan</span>
-								<span><i class="icon-table mr-2"></i>10 seats</span>
-								<span><i class="icon-calendar mr-2"></i>4 Years</span>
-							</p>
-							<h3><a href="#">Electric Engineering</a></h3>
-							<p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
-						</div>
-					</div>
-					<div class="col-md-3 course ftco-animate">
-						<div class="img" style="background-image: url({{asset('foxtl/images/course-4.jpg')}});"></div>
-						<div class="text pt-4">
-							<p class="meta d-flex">
-								<span><i class="icon-user mr-2"></i>Mr. Khan</span>
-								<span><i class="icon-table mr-2"></i>10 seats</span>
-								<span><i class="icon-calendar mr-2"></i>4 Years</span>
-							</p>
-							<h3><a href="#">Electric Engineering</a></h3>
-							<p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
-						</div>
-					</div>
-				</div>
+		<div class="container-fluid px-4">
+			<div class="row justify-content-center mb-5 pb-2">
+                <div class="col-md-8 text-center heading-section ftco-animate">
+                    <h2 class="mb-4"><span>Our</span> Courses</h2>
+                    <p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
+                </div>
+            </div>
+
+                    {{-- START Languege --}}
+                    <div>
+                        <div class="row justify-content-center mb-5 pb-2">
+                            <div class="col-md-8 text-center heading-section ftco-animate">
+                                <h2 class="mb-4">Language</h2>
+                            </div>
+                        </div>
+			            <div class="row justify-content-around">
+                            <div class="col-md-3 course ftco-animate">
+                                <div class="img" style="background-image: url({{asset('foxtl/images/course-1.jpg')}});"></div>
+                                <div class="text pt-4">
+                                    <p class="meta d-flex">
+                                        <span><i class="icon-user mr-2"></i>Mr. Khan</span>
+                                        <span><i class="icon-table mr-2"></i>10 seats</span>
+                                        <span><i class="icon-calendar mr-2"></i>4 Years</span>
+                                    </p>
+                                    <h3><a href="#">English</a></h3>
+                                    <p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 course ftco-animate">
+                                <div class="img" style="background-image: url({{asset('foxtl/images/course-2.jpg')}});"></div>
+                                <div class="text pt-4">
+                                    <p class="meta d-flex">
+                                        <span><i class="icon-user mr-2"></i>Mr. Khan</span>
+                                        <span><i class="icon-table mr-2"></i>10 seats</span>
+                                        <span><i class="icon-calendar mr-2"></i>4 Years</span>
+                                    </p>
+                                    <h3><a href="#">Arabic</a></h3>
+                                <p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 course ftco-animate">
+                                <div class="img" style="background-image: url({{asset('foxtl/images/course-3.jpg')}});"></div>
+                                <div class="text pt-4">
+                                    <p class="meta d-flex">
+                                        <span><i class="icon-user mr-2"></i>Mr. Khan</span>
+                                        <span><i class="icon-table mr-2"></i>10 seats</span>
+                                        <span><i class="icon-calendar mr-2"></i>4 Years</span>
+                                    </p>
+                                    <h3><a href="#">Japanese</a></h3>
+                                    <p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 course ftco-animate">
+                                <div class="img" style="background-image: url({{asset('foxtl/images/course-4.jpg')}});"></div>
+                                <div class="text pt-4">
+                                    <p class="meta d-flex">
+                                        <span><i class="icon-user mr-2"></i>Mr. Khan</span>
+                                        <span><i class="icon-table mr-2"></i>10 seats</span>
+                                        <span><i class="icon-calendar mr-2"></i>4 Years</span>
+                                    </p>
+                                    <h3><a href="#">Mandarin</a></h3>
+                                    <p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 course ftco-animate">
+                                <div class="img" style="background-image: url({{asset('foxtl/images/course-4.jpg')}});"></div>
+                                <div class="text pt-4">
+                                    <p class="meta d-flex">
+                                        <span><i class="icon-user mr-2"></i>Mr. Khan</span>
+                                        <span><i class="icon-table mr-2"></i>10 seats</span>
+                                        <span><i class="icon-calendar mr-2"></i>4 Years</span>
+                                    </p>
+                                    <h3><a href="#">Spanish</a></h3>
+                                    <p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 course ftco-animate">
+                                <div class="img" style="background-image: url({{asset('foxtl/images/course-4.jpg')}});"></div>
+                                <div class="text pt-4">
+                                    <p class="meta d-flex">
+                                        <span><i class="icon-user mr-2"></i>Mr. Khan</span>
+                                        <span><i class="icon-table mr-2"></i>10 seats</span>
+                                        <span><i class="icon-calendar mr-2"></i>4 Years</span>
+                                    </p>
+                                    <h3><a href="#">Korean</a></h3>
+                                    <p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    {{-- END Languege --}}
+
+                    {{-- START Skills --}}
+                    <div>
+                        <div class="row justify-content-center mb-5 pb-2">
+                            <div class="col-md-8 text-center heading-section ftco-animate">
+                                <h2 class="mb-4">Skills</h2>
+                            </div>
+                        </div>
+			            <div class="row justify-content-center">
+                            <div class="col-md-3 course ftco-animate">
+                                <div class="img" style="background-image: url({{asset('foxtl/images/course-1.jpg')}});"></div>
+                                <div class="text pt-4">
+                                    <p class="meta d-flex">
+                                        <span><i class="icon-user mr-2"></i>Mr. Khan</span>
+                                        <span><i class="icon-table mr-2"></i>10 seats</span>
+                                        <span><i class="icon-calendar mr-2"></i>4 Years</span>
+                                    </p>
+                                    <h3><a href="#">English Debate & Speech</a></h3>
+                                    <p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 course ftco-animate">
+                                <div class="img" style="background-image: url({{asset('foxtl/images/course-2.jpg')}});"></div>
+                                <div class="text pt-4">
+                                    <p class="meta d-flex">
+                                        <span><i class="icon-user mr-2"></i>Mr. Khan</span>
+                                        <span><i class="icon-table mr-2"></i>10 seats</span>
+                                        <span><i class="icon-calendar mr-2"></i>4 Years</span>
+                                    </p>
+                                    <h3><a href="#">Master of Caremony</a></h3>
+                                <p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 course ftco-animate">
+                                <div class="img" style="background-image: url({{asset('foxtl/images/course-3.jpg')}});"></div>
+                                <div class="text pt-4">
+                                    <p class="meta d-flex">
+                                        <span><i class="icon-user mr-2"></i>Mr. Khan</span>
+                                        <span><i class="icon-table mr-2"></i>10 seats</span>
+                                        <span><i class="icon-calendar mr-2"></i>4 Years</span>
+                                    </p>
+                                    <h3><a href="#">Scrabble</a></h3>
+                                    <p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 course ftco-animate">
+                                <div class="img" style="background-image: url({{asset('foxtl/images/course-4.jpg')}});"></div>
+                                <div class="text pt-4">
+                                    <p class="meta d-flex">
+                                        <span><i class="icon-user mr-2"></i>Mr. Khan</span>
+                                        <span><i class="icon-table mr-2"></i>10 seats</span>
+                                        <span><i class="icon-calendar mr-2"></i>4 Years</span>
+                                    </p>
+                                    <h3><a href="#">Arabic Debate & Speech</a></h3>
+                                    <p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 course ftco-animate">
+                                <div class="img" style="background-image: url({{asset('foxtl/images/course-4.jpg')}});"></div>
+                                <div class="text pt-4">
+                                    <p class="meta d-flex">
+                                        <span><i class="icon-user mr-2"></i>Mr. Khan</span>
+                                        <span><i class="icon-table mr-2"></i>10 seats</span>
+                                        <span><i class="icon-calendar mr-2"></i>4 Years</span>
+                                    </p>
+                                    <h3><a href="#">FLATari</a></h3>
+                                    <p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    {{-- END Skills --}}
 			</div>
+		</div>
 	</section>
     {{-- END Course --}}
 
@@ -449,87 +567,69 @@
 	</section>
     {{-- END Certified Teachers --}}
 
-    {{-- START Recent Blog --}}
+    {{-- START Recent News --}}
 	<section class="ftco-section bg-light">
-			<div class="container">
-				<div class="row justify-content-center mb-5 pb-2">
-          <div class="col-md-8 text-center heading-section ftco-animate">
-            <h2 class="mb-4"><span>Recent</span> Blog</h2>
-            <p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
-          </div>
+		<div class="container">
+
+		    <div class="row justify-content-center mb-5 pb-2">
+                <div class="col-md-8 text-center heading-section ftco-animate">
+                    <h2 class="mb-4"><span>Recent</span> News</h2>
+                    <p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
+                </div>
+            </div>
+		    <div class="row">
+
+                @forelse($post as $key => $post)
+                <div class="col-md-6 col-lg-4 ftco-animate">
+                    <div class="blog-entry">
+                        <a href="/news/{{$post->id}}" class="block-20 d-flex align-items-end" style="background-image: url('/uploads/news/{{$post->picture}}');">
+                            <div class="meta-date text-center p-2">
+                                <span class="yr">{{$post->created_at}}</span>
+                            </div>
+                        </a>
+                        <div class="text bg-white p-4">
+                            <h3 class="heading"><a href="/news/{{$post->id}}">{{substr($post->title, 0, 75)}}</a></h3>
+                             <p>{{substr($post->openingsentence, 0, 150)}}...</p>
+                            <div class="d-flex align-items-center mt-4">
+                                <p class="mb-0"><a href="/news/{{$post->id}}" class="btn btn-primary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
+                                <p class="ml-auto mb-0">
+                                    <a href="/" class="mr-2">FLAT UIN Jakarta</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @empty
+                <div class="col-md-6 col-lg-4 ftco-animate">
+                    <div class="blog-entry">
+                        <a href="blog-single.html" class="block-20 d-flex align-items-end" style="background-image: url('{{asset('foxtl/images/image_2.jpg')}}');">
+                            <div class="meta-date text-center p-2">
+                                <span class="day">26</span>
+                                <span class="mos">June</span>
+                                <span class="yr">2019</span>
+                            </div>
+                        </a>
+                        <div class="text bg-white p-4">
+                            <h3 class="heading"><a href="#">Skills To Develop Your Child Memory</a></h3>
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                            <div class="d-flex align-items-center mt-4">
+                                <p class="mb-0"><a href="#" class="btn btn-primary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
+                                <p class="ml-auto mb-0">
+                                    <a href="#" class="mr-2">Admin</a>
+                                    <a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @endforelse
+
+            </div>
         </div>
-		<div class="row">
-          <div class="col-md-6 col-lg-4 ftco-animate">
-            <div class="blog-entry">
-              <a href="blog-single.html" class="block-20 d-flex align-items-end" style="background-image: url('{{asset('foxtl/images/image_1.jpg')}}');">
-								<div class="meta-date text-center p-2">
-                  <span class="day">26</span>
-                  <span class="mos">June</span>
-                  <span class="yr">2019</span>
-                </div>
-              </a>
-              <div class="text bg-white p-4">
-                <h3 class="heading"><a href="#">Skills To Develop Your Child Memory</a></h3>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                <div class="d-flex align-items-center mt-4">
-	                <p class="mb-0"><a href="#" class="btn btn-primary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
-	                <p class="ml-auto mb-0">
-	                	<a href="#" class="mr-2">Admin</a>
-	                	<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-	                </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 ftco-animate">
-            <div class="blog-entry">
-              <a href="blog-single.html" class="block-20 d-flex align-items-end" style="background-image: url('{{asset('foxtl/images/image_2.jpg')}}');">
-								<div class="meta-date text-center p-2">
-                  <span class="day">26</span>
-                  <span class="mos">June</span>
-                  <span class="yr">2019</span>
-                </div>
-              </a>
-              <div class="text bg-white p-4">
-                <h3 class="heading"><a href="#">Skills To Develop Your Child Memory</a></h3>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                <div class="d-flex align-items-center mt-4">
-	                <p class="mb-0"><a href="#" class="btn btn-primary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
-	                <p class="ml-auto mb-0">
-	                	<a href="#" class="mr-2">Admin</a>
-	                	<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-	                </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 ftco-animate">
-            <div class="blog-entry">
-              <a href="blog-single.html" class="block-20 d-flex align-items-end" style="background-image: url('{{asset('foxtl/images/image_2.jpg')}}');">
-								<div class="meta-date text-center p-2">
-                  <span class="day">26</span>
-                  <span class="mos">June</span>
-                  <span class="yr">2019</span>
-                </div>
-              </a>
-              <div class="text bg-white p-4">
-                <h3 class="heading"><a href="#">Skills To Develop Your Child Memory</a></h3>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                <div class="d-flex align-items-center mt-4">
-	                <p class="mb-0"><a href="#" class="btn btn-primary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
-	                <p class="ml-auto mb-0">
-	                	<a href="#" class="mr-2">Admin</a>
-	                	<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-	                </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          </div>
-        </div>
+
 		</div>
 	</section>
-    {{-- END Recent Blog --}}
+    {{-- END Recent News --}}
 
     {{-- START Testimoni --}}
 	<section class="ftco-section testimony-section">

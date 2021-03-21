@@ -27,6 +27,13 @@ class newsController extends Controller
         return view('layouts.newsfox', compact('post'));
     }
 
+    public function indexhome()
+    {
+        $post= Berita::orderBy('created_at','desc')->limit(3)->get();
+        return view('layouts.homefox', compact('post'));
+    }
+
+
     // public function indexnewsfooter()
     // {
     //     $post= Berita::orderBy('created_at','desc')->limit(2)->get();
