@@ -582,16 +582,16 @@
                 @forelse($post as $key => $post)
                 <div class="col-md-6 col-lg-4 ftco-animate">
                     <div class="blog-entry">
-                        <a href="/adminnews/{{$post->id}}" class="block-20 d-flex align-items-end" style="background-image: url('/uploads/news/{{$post->picture}}');">
+                        <a href="/flatnews/{{$post->id}}" class="block-20 d-flex align-items-end" style="background-image: url('/uploads/news/{{$post->picture}}');">
                             <div class="meta-date text-center p-2">
                                 <span class="yr">{{$post->created_at}}</span>
                             </div>
                         </a>
                         <div class="text bg-white p-4">
-                            <h3 class="heading"><a href="/adminnews/{{$post->id}}">{{substr($post->title, 0, 75)}}</a></h3>
+                            <h3 class="heading"><a href="/flatnews/{{$post->id}}">{{substr($post->title, 0, 75)}}</a></h3>
                              <p>{{substr($post->openingsentence, 0, 150)}}...</p>
                             <div class="d-flex align-items-center mt-4">
-                                <p class="mb-0"><a href="/adminnews/{{$post->id}}" class="btn btn-primary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
+                                <p class="mb-0"><a href="/flatnews/{{$post->id}}" class="btn btn-primary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
                                 <p class="ml-auto mb-0">
                                     <a href="/" class="mr-2">FLAT UIN Jakarta</a>
                                 </p>

@@ -11,7 +11,7 @@
                         <h3 class="card-title">Edit  "{{$post->title}}"  News</h3>
                     </div>
 
-                    <form role="form" action='/adminnews/{{$post->id}}' method='post' enctype="multipart/form-data">
+                    <form role="form" action='/flatnews/{{$post->id}}' method='post' enctype="multipart/form-data">
                     @csrf
                     @method('PUT')
 

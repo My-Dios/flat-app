@@ -17,7 +17,7 @@
                                     {{session('success')}}
                                 </div>
                             @endif
-                            <a href="/adminnews/create" class='btn btn-primary mb-2'>Create News</a>
+                            <a href="/flatnews/create" class='btn btn-primary mb-2'>Create News</a>
                             {{-- START Data table News --}}
                             <table class="table table-bordered">
                                 <thead>
@@ -41,9 +41,9 @@
                                                 <img style="width: 100px;" src="/uploads/news/{{$post->picture}}" alt="{{$post->title}}" class="card-img-top"/>
                                             </td>
                                             <td align='center'>
-                                                <a href="/adminnews/{{$post->id}}" class="btn btn-info btn-sm mb-2 pl-3 pr-3">Show</a>
-                                                <a href="/adminnews/{{$post->id}}/edit" class="btn btn-default btn-sm mb-2 pl-3 pr-3">Edit</a>
-                                                <form action="/adminnews/{{$post->id}}" method="post">
+                                                <a href="/flatnews/{{$post->id}}" class="btn btn-info btn-sm mb-2 pl-3 pr-3">Show</a>
+                                                <a href="/flatnews/{{$post->id}}/edit" class="btn btn-default btn-sm mb-2 pl-3 pr-3">Edit</a>
+                                                <form action="/flatnews/{{$post->id}}" method="post">
                                                 @csrf
                                                 @method('DELETE')
                                                     <input type="submit" value="Delete" class="btn btn-danger btn-sm mb-2">

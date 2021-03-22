@@ -25,9 +25,9 @@
                     <div class="block-21 mb-4 d-flex ftco-animate">
                         <a class="blog-img mr-4" style="background-image: url('/uploads/news/{{$post->picture}}');"></a>
                         <div class="text">
-                            <h3 class="heading"><a href="/adminnews/{{$post->id}}">{{substr($post->title, 0, 75)}}</a></h3>
+                            <h3 class="heading"><a href="/flatnews/{{$post->id}}">{{substr($post->title, 0, 75)}}</a></h3>
                             <div class="meta">
-                                <div><a href="/adminnews/{{$post->id}}"><span class="icon-calendar"></span> {{$post->created_at}}</a></div>
+                                <div><a href="/flatnews/{{$post->id}}"><span class="icon-calendar"></span> {{$post->created_at}}</a></div>
                             </div>
                         </div>
                     </div>
