@@ -25,9 +25,9 @@
                     <div class="block-21 mb-4 d-flex ftco-animate">
                         <a class="blog-img mr-4" style="background-image: url('/uploads/news/{{$post->picture}}');"></a>
                         <div class="text">
-                            <h3 class="heading"><a href="/news/{{$post->id}}">{{substr($post->title, 0, 75)}}</a></h3>
+                            <h3 class="heading"><a href="/adminnews/{{$post->id}}">{{substr($post->title, 0, 75)}}</a></h3>
                             <div class="meta">
-                                <div><a href="/news/{{$post->id}}"><span class="icon-calendar"></span> {{$post->created_at}}</a></div>
+                                <div><a href="/adminnews/{{$post->id}}"><span class="icon-calendar"></span> {{$post->created_at}}</a></div>
                             </div>
                         </div>
                     </div>
@@ -78,7 +78,7 @@
                     <h2 class="ftco-heading-2">Explore</h2>
                     <ul class="list-unstyled">
                         <li class="ftco-animate"><a href="/"><span class="ion-ios-arrow-round-forward mr-2"></span>Home</a></li>
-                        <li class="ftco-animate"><a href="/Course"><span class="ion-ios-arrow-round-forward mr-2"></span>Courses</a></li>
+                        <li class="ftco-animate"><a href="/course"><span class="ion-ios-arrow-round-forward mr-2"></span>Courses</a></li>
                         <li class="ftco-animate"><a href="/news"><span class="ion-ios-arrow-round-forward mr-2"></span>News</a></li>
                     </ul>
                 </div>
@@ -111,7 +111,7 @@
 
             {{-- START Copyright --}}
             <div class="row">
-                <div class="col-md-12 text-center animate__slideInUp">
+                <div class="col-md-12 text-center">
                     <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This website is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://www.instagram.com/flatuinjakarta/" target="_blank">UKM Bahasa-FLAT UIN Jakarta</a>
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->

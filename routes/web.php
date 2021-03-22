@@ -11,33 +11,31 @@
 |
 */
 
-// Route Without Data
+// // Route Home
 Route::get('/', 'newsController@indexhome');
-
-Route::get('/about', function () {
-    return view('layouts.aboutfox');
-});
-
+Route::get('/news', 'newsController@indexnews');
 Route::get('/course', function () {
     return view('layouts.coursefox');
 });
 
 // // Route News
-//direct ke createnews
-Route::get('/admin/createnews', 'newsController@create');
-//simpan data di databasenya
-Route::post('/admin/createnews', 'newsController@store');
 //mengambil data dari database untuk di buka di halaman homeadmin
-Route::get('/admin', 'newsController@index');
-//mengambil data dari database untuk di buka di halaman news
-Route::get('/news', 'newsController@indexnews');
-//mengambil data dari database untuk di buka di halaman footer
-// Route::get('/', 'newsController@indexnewsfooter');
+Route::get('/adminnews', 'newsController@index');
+//direct ke createnews
+Route::get('/adminnews/create', 'newsController@create');
+//simpan data di databasenya
+Route::post('/adminnews', 'newsController@store');
 //direct ke halaman detailnews dengan data sesuai idnya
-Route::get('/news/{id}', 'newsController@show');
+Route::get('/adminnews/{id}', 'newsController@show');
 //direct ke halaman editnews sesuai idnya
-Route::get('/admin/{id}/edit', 'newsController@edit');
+Route::get('/adminnews/{id}/edit', 'newsController@edit');
 //mengupdate dari databasenya sesuai idnya
-Route::put('/admin/{id}', 'newsController@update');
+Route::put('/adminnews/{id}', 'newsController@update');
 //menghapus datanya sesuai idnya
-Route::delete('/admin/{id}', 'newsController@destroy');
+Route::delete('/adminnews/{id}', 'newsController@destroy');
+
+// Route::resource('admin', 'newsController');
+
+
+
+

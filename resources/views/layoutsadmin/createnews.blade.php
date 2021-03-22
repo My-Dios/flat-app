@@ -71,7 +71,7 @@
                         <h3 class="card-title">Create News</h3>
                     </div>
 
-                    <form role="form" action='/admin/createnews' method='post' enctype="multipart/form-data" class="needs-validation" novalidate>
+                    <form role="form" action='/adminnews/create' method='post' enctype="multipart/form-data" class="needs-validation" novalidate>
                     @csrf
                     @method('POST')
 

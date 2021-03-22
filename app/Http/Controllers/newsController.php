@@ -77,7 +77,7 @@ class newsController extends Controller
         ]);
 
         $gambar->move('uploads/news/',$new_gambar);
-        return redirect('/admin');
+        return redirect('/adminnews');
     }
 
     /**
@@ -123,7 +123,7 @@ class newsController extends Controller
             'picture' => $new_gambar,
         ]);
         $gambar->move('uploads/news/',$new_gambar);
-        return redirect('/admin');
+        return redirect('/adminnews');
     }
 
     /**
@@ -135,6 +135,6 @@ class newsController extends Controller
     public function destroy($id)
     {
         Berita::destroy($id);
-        return redirect('/admin');
+        return redirect('/adminnews');
     }
 }
