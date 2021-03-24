@@ -17,7 +17,7 @@
             <!-- Add icons to the links using the .nav-icon class
                 with font-awesome or any other icon font library -->
                 <li class="nav-item has-treeview">
-                    <a href="/admin" class="nav-link">
+                    <a href="/flatnews" class="nav-link">
                         <i class="nav-icon fas fa-table"></i>
                         <p>
                             Post Data
@@ -25,7 +25,7 @@
                         </a>
                 </li>
                 <li class="nav-item">
-                    <a href="/admin/createnews" class="nav-link">
+                    <a href="/flatnews/create" class="nav-link">
                         <i class="nav-icon fas fa-newspaper"></i>
                         <p>
                             Create News

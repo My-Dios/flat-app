@@ -10,6 +10,10 @@ use Auth;
 
 class newsController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('is_admin')->only(['index','edit', 'update', 'destroy', 'create', 'store']);
+    }
     /**
      * Display a listing of the resource.
      *
@@ -20,6 +24,20 @@ class newsController extends Controller
         $post= Berita::orderBy('created_at','desc')->get();
         return view('layoutsadmin.homeadmin', compact('post'));
     }
+
+    // public function index()
+    // {
+    //     if ($url == 'flatnews') {
+    //         $post= Berita::orderBy('created_at','desc')->get();
+    //         return view('layoutsadmin.homeadmin', compact('post'))->middleware('is_admin');
+    //     } else if($url == '/news'){
+    //         $post= Berita::orderBy('created_at','desc')->get();
+    //         return view('layouts.newsfox', compact('post'));
+    //     } else{
+    //         $post= Berita::orderBy('created_at','desc')->limit(3)->get();
+    //         return view('layouts.homefox', compact('post'));
+    //     }
+    // }
 
     public function indexnews()
     {
@@ -77,7 +95,7 @@ class newsController extends Controller
         ]);
 
         $gambar->move('uploads/news/',$new_gambar);
-        return redirect('/adminnews');
+        return redirect('/flatnews');
     }
 
     /**
@@ -123,7 +141,7 @@ class newsController extends Controller
             'picture' => $new_gambar,
         ]);
         $gambar->move('uploads/news/',$new_gambar);
-        return redirect('/adminnews');
+        return redirect('/flatnews');
     }
 
     /**
@@ -135,6 +153,6 @@ class newsController extends Controller
     public function destroy($id)
     {
         Berita::destroy($id);
-        return redirect('/adminnews');
+        return redirect('/flatnews');
     }
 }

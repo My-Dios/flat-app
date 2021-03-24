@@ -10,6 +10,10 @@
                 <div class="card">
                         <div class="card-header">
                             <h3 class="card-title">News Post Data</h3>
+                            <div class="card-tools">
+                                <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
+                                <i class="fas fa-minus"></i></button>
+                            </div>
                         </div>
                         <div class="card-body">
                             @if(session('success'))
@@ -74,6 +78,10 @@
                 <div class="card">
                         <div class="card-header">
                             <h3 class="card-title">Courses Post Data</h3>
+                            <div class="card-tools">
+                                <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
+                                <i class="fas fa-minus"></i></button>
+                            </div>
                         </div>
                         <div class="card-body">
                             @if(session('success'))
