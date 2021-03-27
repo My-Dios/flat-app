@@ -16,16 +16,6 @@ class JumbotronController extends Controller
     }
 
     /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
-    {
-
-    }
-
-    /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
@@ -58,7 +48,7 @@ class JumbotronController extends Controller
         ]);
 
         $gambar->move('uploads/jumbotrons/',$new_gambar);
-        return redirect('/flatjumbotrons');
+        return redirect('/admin');
     }
 
     /**
@@ -107,7 +97,7 @@ class JumbotronController extends Controller
         ]);
 
         $gambar->move('uploads/jumbotrons/',$new_gambar);
-        return redirect('/flatjumbotrons');
+        return redirect('/admin');
     }
 
     /**
@@ -119,6 +109,6 @@ class JumbotronController extends Controller
     public function destroy($id)
     {
         Jumbotron::destroy($id);
-        return redirect('/flatnews');
+        return redirect('/admin');
     }
 }

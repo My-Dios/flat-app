@@ -27,7 +27,7 @@
 
 @section('content')
 {{-- START jumbotron --}}
-    <section class="hero-wrap hero-wrap-2" style="background-image: url('{{asset('foxtl/images/bg_1.jpg')}}');">
+    <section class="hero-wrap hero-wrap-2" style="background-image:url('/uploads/news/{{$post->picture}}');">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center">
@@ -46,11 +46,11 @@
 		<div class="row">
           <div class="col-lg-8 ftco-animate">
             <h2 class="mb-3">{{$post->title}}</h2>
-            <p>{{$post->openingsentence}}</p>
+            <p class="text-justify">{{$post->openingsentence}}</p>
             <p>
               <img src="/uploads/news/{{$post->picture}}" alt="{{$post->title}}" class="img-fluid">
             </p>
-            <p>{{$post->description}}</p>
+            <p class='text-justify'>{{$post->description}}</p>
             <p class="mb-0"><a href="/news" class="btn btn-primary"><span class="ion-ios-arrow-round-back"> Back to News</a></p>
           </div>
         </div>

@@ -11,40 +11,9 @@ use Auth;
 
 class newsController extends Controller
 {
-    public function indexnews()
-    {
-        $post= Berita::orderBy('created_at','desc')->get();
-        return view('layouts.newsfox', compact('post'));
-    }
-
-    public function indexhome()
-    {
-        $post= Berita::orderBy('created_at','desc')->limit(3)->get();
-        $postjumbotron= Jumbotron::orderBy('created_at','desc')->get();
-        return view('layouts.homefox', compact('post', 'postjumbotron'));
-    }
-
-    public function indexcourse()
-    {
-        return view('layouts.coursefox');
-    }
-
-
     public function __construct()
     {
-        $this->middleware('is_admin')->only(['index','edit', 'update', 'destroy', 'create', 'store']);
-    }
-
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
-    {
-        $postjumbotron= Jumbotron::orderBy('created_at','desc')->get();
-        $post= Berita::orderBy('created_at','desc')->get();
-        return view('layoutsadmin.homeadmin', compact('post', 'postjumbotron'));
+        $this->middleware('is_admin')->only(['edit', 'update', 'destroy', 'create', 'store']);
     }
 
     /**
@@ -84,7 +53,7 @@ class newsController extends Controller
         ]);
 
         $gambar->move('uploads/news/',$new_gambar);
-        return redirect('/flatnews');
+        return redirect('/admin');
     }
 
     /**
@@ -96,8 +65,7 @@ class newsController extends Controller
     public function show($id)
     {
         $post = Berita::find($id);
-        $postnewsfooter= Berita::orderBy('created_at','desc')->limit(2)->get();
-        return view('layouts.detailnewsfox', compact('post', 'postnewsfooter'));
+        return view('layouts.detailnewsfox', compact('post'));
     }
 
     /**
@@ -131,7 +99,7 @@ class newsController extends Controller
             'picture' => $new_gambar,
         ]);
         $gambar->move('uploads/news/',$new_gambar);
-        return redirect('/flatnews');
+        return redirect('/admin');
     }
 
     /**
@@ -143,6 +111,6 @@ class newsController extends Controller
     public function destroy($id)
     {
         Berita::destroy($id);
-        return redirect('/flatnews');
+        return redirect('/admin');
     }
 }

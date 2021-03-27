@@ -11,14 +11,17 @@
 |
 */
 
-// // Route Home
-Route::get('/', 'newsController@indexhome');
-Route::get('/news', 'newsController@indexnews');
-Route::get('/course', 'newsController@indexcourse');
+// // Route Index
+Route::get('/', 'indexController@indexhome');
+Route::get('/news', 'indexController@indexnews');
+Route::get('/course', 'indexController@indexcourse');
+
+// // Route Index Admin
+Route::get('/admin', 'indexAdminController@index')->middleware('is_admin');
 
 // // Route News
 //mengambil data dari database untuk di buka di halaman homeadmin
-Route::get('/flatnews', 'newsController@index');
+// Route::get('/flatnews', 'newsController@index');
 //direct ke createnews
 Route::get('/flatnews/create', 'newsController@create');
 //simpan data di databasenya
@@ -34,7 +37,6 @@ Route::delete('/flatnews/{id}', 'newsController@destroy');
 // Route::resource('flatnews', 'newsController');
 
 // // Route Jumbotron
-Route::get('/flatjumbotrons', 'newsController@index');
 Route::get('/flatjumbotrons/create', 'jumbotronController@create');
 Route::post('/flatjumbotrons', 'jumbotronController@store');
 Route::get('/flatjumbotrons/{id}', 'jumbotronController@show');
