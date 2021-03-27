@@ -4,32 +4,12 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use DB;
-use App\Berita;
 use App\Jumbotron;
 use File;
 use Auth;
 
-class newsController extends Controller
+class JumbotronController extends Controller
 {
-    public function indexnews()
-    {
-        $post= Berita::orderBy('created_at','desc')->get();
-        return view('layouts.newsfox', compact('post'));
-    }
-
-    public function indexhome()
-    {
-        $post= Berita::orderBy('created_at','desc')->limit(3)->get();
-        $postjumbotron= Jumbotron::orderBy('created_at','desc')->get();
-        return view('layouts.homefox', compact('post', 'postjumbotron'));
-    }
-
-    public function indexcourse()
-    {
-        return view('layouts.coursefox');
-    }
-
-
     public function __construct()
     {
         $this->middleware('is_admin')->only(['index','edit', 'update', 'destroy', 'create', 'store']);
@@ -42,9 +22,7 @@ class newsController extends Controller
      */
     public function index()
     {
-        $postjumbotron= Jumbotron::orderBy('created_at','desc')->get();
-        $post= Berita::orderBy('created_at','desc')->get();
-        return view('layoutsadmin.homeadmin', compact('post', 'postjumbotron'));
+
     }
 
     /**
@@ -54,7 +32,7 @@ class newsController extends Controller
      */
     public function create()
     {
-        return view('layoutsadmin.createnews');
+        return view('layoutsadmin.createjumbotrons');
     }
 
     /**
@@ -66,25 +44,21 @@ class newsController extends Controller
     public function store(Request $request)
     {
         // dd($request->all());
-        // $request->validate([
-        //     "title" => 'required',
-        //     "openingsentence" => 'required',
-        //     "description" => 'required',
-        //     'picture' => 'required'
-        // ]);
-
         $gambar = $request->picture;
         $new_gambar = time() . ' . ' . $gambar->getClientOriginalName();
 
-        $post = Berita::create([
+        $postjumbotron = Jumbotron::create([
             "title" => $request["title"],
-            "openingsentence" => $request["openingsentence"],
-            "description" => $request["description"],
+            "sentence" => $request["sentence"],
+            "btnname" => $request["buttonname"],
+            "btnlink" => $request["buttonlink"],
             'picture' => $new_gambar,
+            "textalign" => $request["textalign"],
+            "justifycontent" => $request["justifycontent"],
         ]);
 
-        $gambar->move('uploads/news/',$new_gambar);
-        return redirect('/flatnews');
+        $gambar->move('uploads/jumbotrons/',$new_gambar);
+        return redirect('/flatjumbotrons');
     }
 
     /**
@@ -95,9 +69,7 @@ class newsController extends Controller
      */
     public function show($id)
     {
-        $post = Berita::find($id);
-        $postnewsfooter= Berita::orderBy('created_at','desc')->limit(2)->get();
-        return view('layouts.detailnewsfox', compact('post', 'postnewsfooter'));
+        //
     }
 
     /**
@@ -108,8 +80,8 @@ class newsController extends Controller
      */
     public function edit($id)
     {
-        $post = Berita::find($id);
-        return view('layoutsadmin.editnews', compact('post'));
+        $postjumbotron = Jumbotron::find($id);
+        return view('layoutsadmin.editjumbotrons', compact('postjumbotron'));
     }
 
     /**
@@ -124,14 +96,18 @@ class newsController extends Controller
         $gambar = $request->picture;
         $new_gambar = time() . ' . ' . $gambar->getClientOriginalName();
 
-        $update = Berita::where("id", $id)-> update([
-           "title" => $request["title"],
-            "openingsentence" => $request["openingsentence"],
-            "description" => $request["description"],
+        $update = Jumbotron::where("id", $id)-> update([
+            "title" => $request["title"],
+            "sentence" => $request["sentence"],
+            "btnname" => $request["buttonname"],
+            "btnlink" => $request["buttonlink"],
             'picture' => $new_gambar,
+            "textalign" => $request["textalign"],
+            "justifycontent" => $request["justifycontent"],
         ]);
-        $gambar->move('uploads/news/',$new_gambar);
-        return redirect('/flatnews');
+
+        $gambar->move('uploads/jumbotrons/',$new_gambar);
+        return redirect('/flatjumbotrons');
     }
 
     /**
@@ -142,7 +118,7 @@ class newsController extends Controller
      */
     public function destroy($id)
     {
-        Berita::destroy($id);
+        Jumbotron::destroy($id);
         return redirect('/flatnews');
     }
 }

@@ -26,76 +26,21 @@
 
 @section('content')
     <!-- START jumbotron -->
-    {{-- <section class="home-slider owl-carousel">
-        <div class="slider-item" style="background-image:url({{asset('img/topik.JPG')}});">
-      	    <div class="overlay"></div>
-            <div class="container">
-                <div class="row no-gutters text-center slider-text align-items-center justify-content-center" data-scrollax-parent="true">
-                    <div class="col-md-6 ftco-animate">
-                        <h1 class="mb-4">Education Needs Complete Solution</h1>
-                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                        <p><a href="#" class="btn btn-primary px-4 py-3 mt-3">Contact Us</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="slider-item" style="background-image:url({{asset('foxtl/images/bg_2.jpg')}});">
-      	    <div class="overlay"></div>
-            <div class="container">
-                <div class="row no-gutters slider-text align-items-center justify-content-start" data-scrollax-parent="true">
-                    <div class="col-md-6 ftco-animate">
-                        <h1 class="mb-4">University, College School Education</h1>
-                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                        <p><a href="#" class="btn btn-primary px-4 py-3 mt-3">Contact Us</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="slider-item" style="background-image:url({{asset('img/botak.jpeg')}});">
-      	    <div class="overlay"></div>
-            <div class="container">
-                <div class="row no-gutters text-center slider-text align-items-center justify-content-start" data-scrollax-parent="true">
-                    <div class="col-md-6 ftco-animate">
-                        <h1 class="mb-4">Education Needs Complete Solution</h1>
-                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                        <p><a href="#" class="btn btn-primary px-4 py-3 mt-3">Contact Us</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="slider-item" style="background-image:url({{asset('foxtl/images/bg_2.jpg')}});">
-      	    <div class="overlay"></div>
-            <div class="container">
-                <div class="row no-gutters slider-text align-items-center justify-content-start" data-scrollax-parent="true">
-                    <div class="col-md-6 ftco-animate">
-                        <h1 class="mb-4">University, College School Education</h1>
-                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                        <p><a href="#" class="btn btn-primary px-4 py-3 mt-3">Contact Us</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> --}}
-    <!-- END jumbotron -->
-
-    <!-- START jumbotron -->
     <section class="home-slider owl-carousel">
-        <div class="slider-item" style="background-image:url({{asset('img/topik.JPG')}});">
+        @forelse($postjumbotron as $key => $postjumbotron)
+        <div class="slider-item" style="background-image:url('/uploads/jumbotrons/{{$postjumbotron->picture}}');">
       	    <div class="overlay"></div>
             <div class="container">
-                <div class="row no-gutters text-center slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+                <div class="row no-gutters text-{{$postjumbotron->textalign}} slider-text align-items-center justify-content-{{$postjumbotron->justifycontent}}" data-scrollax-parent="true">
                     <div class="col-md-6 ftco-animate">
-                        <h1 class="mb-4">Education Needs Complete Solution</h1>
-                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                        <p><a href="#" class="btn btn-primary px-4 py-3 mt-3">Contact Us</a></p>
+                        <h1 class="mb-4">{{$postjumbotron->title}}</h1>
+                        <p>{{$postjumbotron->sentence}}</p>
+                        <p><a href="{{$postjumbotron->btnlink}}" class="btn btn-primary px-4 py-3 mt-3" target="_blank">{{$postjumbotron->btnname}}</a></p>
                     </div>
                 </div>
             </div>
         </div>
-
+        @empty
         <div class="slider-item" style="background-image:url({{asset('foxtl/images/bg_2.jpg')}});">
       	    <div class="overlay"></div>
             <div class="container">
@@ -103,37 +48,12 @@
                     <div class="col-md-6 ftco-animate">
                         <h1 class="mb-4">University, College School Education</h1>
                         <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                        <p><a href="#" class="btn btn-primary px-4 py-3 mt-3">Contact Us</a></p>
+                        <p><a href="/" class="btn btn-primary px-4 py-3 mt-3">Contact Us</a></p>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="slider-item" style="background-image:url({{asset('img/botak.jpeg')}});">
-      	    <div class="overlay"></div>
-            <div class="container">
-                <div class="row no-gutters text-center slider-text align-items-center justify-content-start" data-scrollax-parent="true">
-                    <div class="col-md-6 ftco-animate">
-                        <h1 class="mb-4">Education Needs Complete Solution</h1>
-                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                        <p><a href="#" class="btn btn-primary px-4 py-3 mt-3">Contact Us</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="slider-item" style="background-image:url({{asset('foxtl/images/bg_2.jpg')}});">
-      	    <div class="overlay"></div>
-            <div class="container">
-                <div class="row no-gutters slider-text align-items-center justify-content-start" data-scrollax-parent="true">
-                    <div class="col-md-6 ftco-animate">
-                        <h1 class="mb-4">University, College School Education</h1>
-                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                        <p><a href="#" class="btn btn-primary px-4 py-3 mt-3">Contact Us</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
+        @endforelse
     </section>
     <!-- END jumbotron -->
 

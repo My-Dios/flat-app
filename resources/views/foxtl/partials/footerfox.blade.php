@@ -7,70 +7,15 @@
                 <div class="ftco-footer-widget mb-5">
             	    <h2 class="ftco-heading-2">Have a Questions?</h2>
             	    <div class="block-23 mb-3">
-	                <ul>
-	                    <li class="ftco-animate"><a href="https://www.google.com/maps/place/UKM+Bahasa-FLAT+UIN+Jakarta/@-6.3066001,106.7546005,17z/data=!4m5!3m4!1s0x2e69efdbdedb7d47:0x6c5a46f2a37599a6!8m2!3d-6.3066778!4d106.7547257?hl=en" target="_blank"><span class="icon icon-map-marker"></span><span class="text">Lt. 3 Gedung Student Center Jl. Ir. H. Djuanda No. 95, Cemp. Putih, Kec. Ciputat, Kota Tangerang Selatan, Banten 15412</span></a></li>
-	                    <li class="ftco-animate"><span class="icon icon-phone"></span><span class="text">+62 822 5822 4790</span></li>
-	                    <li class="ftco-animate"><span class="icon icon-envelope"></span><span class="text">flat@uinjkt.ac.id</span></li>
-	                </ul>
+                        <ul>
+                            <li class="ftco-animate"><a href="https://www.google.com/maps/place/UKM+Bahasa-FLAT+UIN+Jakarta/@-6.3066001,106.7546005,17z/data=!4m5!3m4!1s0x2e69efdbdedb7d47:0x6c5a46f2a37599a6!8m2!3d-6.3066778!4d106.7547257?hl=en" target="_blank"><span class="icon icon-map-marker"></span><span class="text">Lt. 3 Gedung Student Center Jl. Ir. H. Djuanda No. 95, Cemp. Putih, Kec. Ciputat, Kota Tangerang Selatan, Banten 15412</span></a></li>
+                            <li class="ftco-animate"><span class="icon icon-phone"></span><span class="text">+62 822 5822 4790</span></li>
+                            <li class="ftco-animate"><span class="icon icon-envelope"></span><span class="text">flat@uinjkt.ac.id</span></li>
+                        </ul>
 	                </div>
                 </div>
             </div>
             {{-- END Have a Questions? --}}
-
-            {{-- START Recent News--}}
-            {{-- <div class="col-md-6 col-lg-3">
-                <div class="ftco-footer-widget mb-5 ">
-                    <h2 class="ftco-heading-2">Recent News</h2>
-                    @forelse($post as $key => $post)
-                    <div class="block-21 mb-4 d-flex ftco-animate">
-                        <a class="blog-img mr-4" style="background-image: url('/uploads/news/{{$post->picture}}');"></a>
-                        <div class="text">
-                            <h3 class="heading"><a href="/flatnews/{{$post->id}}">{{substr($post->title, 0, 75)}}</a></h3>
-                            <div class="meta">
-                                <div><a href="/flatnews/{{$post->id}}"><span class="icon-calendar"></span> {{$post->created_at}}</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    @empty
-                    <div class="block-21 mb-4 d-flex ftco-animate">
-                        <a class="blog-img mr-4" style="background-image: url({{asset('img/default-150x150.png')}});"></a>
-                        <div class="text">
-                            <h3 class="heading"><a href="#">Title</a></h3>
-                            <div class="meta">
-                                <div><a href="#"><span class="icon-calendar"></span> timestamp</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    @endforelse
-                </div>
-            </div> --}}
-            {{-- END Recent News--}}
-
-            {{-- START Recent News default--}}
-            <div class="col-md-6 col-lg-3">
-                <div class="ftco-footer-widget mb-5">
-                    <h2 class="ftco-heading-2">Recent News</h2>
-                    <div class="block-21 mb-4 d-flex ftco-animate">
-                        <a class="blog-img mr-4" style="background-image: url({{asset('img/default-150x150.png')}});"></a>
-                        <div class="text">
-                            <h3 class="heading"><a href="#">Title</a></h3>
-                            <div class="meta">
-                                <div><a href="#"><span class="icon-calendar"></span> timestamp</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="block-21 mb-4 d-flex ftco-animate">
-                        <a class="blog-img mr-4" style="background-image: url({{asset('img/default-150x150.png')}});"></a>
-                        <div class="text">
-                            <h3 class="heading"><a href="#">Title</a></h3>
-                            <div class="meta">
-                                <div><a href="#"><span class="icon-calendar"></span> timestamp</a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            {{-- END Recent News default--}}
 
             {{-- START Explore --}}
             <div class="col-md-6 col-lg-3">
@@ -84,6 +29,15 @@
                 </div>
             </div>
             {{-- END Explore --}}
+
+             {{-- START Logo--}}
+            <div class="col-md-6 col-lg-3">
+                <div class="ftco-footer-widget mb-5 text-center">
+                     <h2 class="ftco-heading-2">We Are</h2>
+                    <img  class="ftco-animate justify-content-center" src="img/flaticon.png" alt="">
+                </div>
+            </div>
+            {{-- END Logo--}}
 
             {{-- START Subs and Connect --}}
             <div class="col-md-6 col-lg-3">

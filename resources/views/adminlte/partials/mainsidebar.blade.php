@@ -22,7 +22,7 @@
                         <p>
                             Post Data
                         </p>
-                        </a>
+                    </a>
                 </li>
                 <li class="nav-item">
                     <a href="/flatnews/create" class="nav-link">
@@ -36,7 +36,15 @@
                     <a href="/#" class="nav-link">
                         <i class="nav-icon fas fa-book"></i>
                         <p>
-                            Create Courses
+                            Create Course
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/flatjumbotrons/create" class="nav-link">
+                        <i class="nav-icon fas fa-chalkboard"></i>
+                        <p>
+                            Create Billboard
                         </p>
                     </a>
                 </li>

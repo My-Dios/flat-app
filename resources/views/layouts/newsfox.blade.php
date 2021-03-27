@@ -17,11 +17,11 @@
     <li class="nav-item">
         <a class="nav-link">&#8726</a>
     </li>
-        @if (Route::has('register'))
-        <li class="nav-item">
-            <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-        </li>
-        @endif
+    @if (Route::has('register'))
+    <li class="nav-item">
+        <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+    </li>
+    @endif
 @endsection
 
 @section('content')

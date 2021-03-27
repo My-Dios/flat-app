@@ -14,15 +14,9 @@
 // // Route Home
 Route::get('/', 'newsController@indexhome');
 Route::get('/news', 'newsController@indexnews');
-Route::get('/course', function () {
-    return view('layouts.coursefox');
-});
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/course', 'newsController@indexcourse');
 
-
-// Route News
+// // Route News
 //mengambil data dari database untuk di buka di halaman homeadmin
 Route::get('/flatnews', 'newsController@index');
 //direct ke createnews
@@ -37,11 +31,16 @@ Route::get('/flatnews/{id}/edit', 'newsController@edit');
 Route::put('/flatnews/{id}', 'newsController@update');
 //menghapus datanya sesuai idnya
 Route::delete('/flatnews/{id}', 'newsController@destroy');
-
 // Route::resource('flatnews', 'newsController');
 
-
-
+// // Route Jumbotron
+Route::get('/flatjumbotrons', 'newsController@index');
+Route::get('/flatjumbotrons/create', 'jumbotronController@create');
+Route::post('/flatjumbotrons', 'jumbotronController@store');
+Route::get('/flatjumbotrons/{id}', 'jumbotronController@show');
+Route::get('/flatjumbotrons/{id}/edit', 'jumbotronController@edit');
+Route::put('/flatjumbotrons/{id}', 'jumbotronController@update');
+Route::delete('/flatjumbotrons/{id}', 'jumbotronController@destroy');
 
 // // Route Auth
 Auth::routes();
