@@ -30,11 +30,12 @@
             </div>
             {{-- END Explore --}}
 
-             {{-- START Logo--}}
+
+            {{-- START Logo--}}
             <div class="col-md-6 col-lg-3">
                 <div class="ftco-footer-widget mb-5 text-center">
-                     <h2 class="ftco-heading-2">Bravo Bahasa!</h2>
-                    <img  class="ftco-animate justify-content-center" src="img/flaticon.png" alt="">
+                    <h2 class="ftco-heading-2">Bravo Bahasa!</h2>
+                    <img class="img-logo ftco-animate justify-content-center" src="{{ url('img/flaticon.png') }}">
                 </div>
             </div>
             {{-- END Logo--}}

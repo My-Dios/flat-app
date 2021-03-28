@@ -8,6 +8,8 @@ use App\Berita;
 use App\Jumbotron;
 use File;
 use Auth;
+use RealRashid\SweetAlert\Facades\Alert;
+
 
 class newsController extends Controller
 {
@@ -53,6 +55,8 @@ class newsController extends Controller
         ]);
 
         $gambar->move('uploads/news/',$new_gambar);
+        Alert::success('Success', 'News has been uploaded');
+
         return redirect('/admin');
     }
 
@@ -110,7 +114,7 @@ class newsController extends Controller
      */
     public function destroy($id)
     {
-        Berita::destroy($id);
+        $delete = Berita::destroy($id);
         return redirect('/admin');
     }
 }

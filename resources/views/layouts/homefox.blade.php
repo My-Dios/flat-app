@@ -375,6 +375,19 @@
                                 </div>
                             </div>
 
+                            <div class="col-md-3 course ftco-animate">
+                                <div class="img" style="background-image: url({{asset('foxtl/images/course-4.jpg')}});"></div>
+                                <div class="text pt-4">
+                                    <p class="meta d-flex">
+                                        <span><i class="icon-user mr-2"></i>Mr. Khan</span>
+                                        <span><i class="icon-table mr-2"></i>10 seats</span>
+                                        <span><i class="icon-calendar mr-2"></i>4 Years</span>
+                                    </p>
+                                    <h3><a href="#">German</a></h3>
+                                    <p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                     {{-- END Languege --}}
@@ -386,7 +399,7 @@
                                 <h2 class="mb-4">Skills</h2>
                             </div>
                         </div>
-			            <div class="row justify-content-center">
+			            <div class="row justify-content-around">
                             <div class="col-md-3 course ftco-animate">
                                 <div class="img" style="background-image: url({{asset('foxtl/images/course-1.jpg')}});"></div>
                                 <div class="text pt-4">
@@ -395,7 +408,46 @@
                                         <span><i class="icon-table mr-2"></i>10 seats</span>
                                         <span><i class="icon-calendar mr-2"></i>4 Years</span>
                                     </p>
-                                    <h3><a href="#">English Debate & Speech</a></h3>
+                                    <h3><a href="#">English Debate</a></h3>
+                                    <p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 course ftco-animate">
+                                <div class="img" style="background-image: url({{asset('foxtl/images/course-1.jpg')}});"></div>
+                                <div class="text pt-4">
+                                    <p class="meta d-flex">
+                                        <span><i class="icon-user mr-2"></i>Mr. Khan</span>
+                                        <span><i class="icon-table mr-2"></i>10 seats</span>
+                                        <span><i class="icon-calendar mr-2"></i>4 Years</span>
+                                    </p>
+                                    <h3><a href="#">English Speech</a></h3>
+                                    <p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 course ftco-animate">
+                                <div class="img" style="background-image: url({{asset('foxtl/images/course-4.jpg')}});"></div>
+                                <div class="text pt-4">
+                                    <p class="meta d-flex">
+                                        <span><i class="icon-user mr-2"></i>Mr. Khan</span>
+                                        <span><i class="icon-table mr-2"></i>10 seats</span>
+                                        <span><i class="icon-calendar mr-2"></i>4 Years</span>
+                                    </p>
+                                    <h3><a href="#">Arabic Debate</a></h3>
+                                    <p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 course ftco-animate">
+                                <div class="img" style="background-image: url({{asset('foxtl/images/course-4.jpg')}});"></div>
+                                <div class="text pt-4">
+                                    <p class="meta d-flex">
+                                        <span><i class="icon-user mr-2"></i>Mr. Khan</span>
+                                        <span><i class="icon-table mr-2"></i>10 seats</span>
+                                        <span><i class="icon-calendar mr-2"></i>4 Years</span>
+                                    </p>
+                                    <h3><a href="#">Arabic Speech</a></h3>
                                     <p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
                                 </div>
                             </div>
@@ -422,19 +474,6 @@
                                         <span><i class="icon-calendar mr-2"></i>4 Years</span>
                                     </p>
                                     <h3><a href="#">Scrabble</a></h3>
-                                    <p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
-                                </div>
-                            </div>
-
-                            <div class="col-md-3 course ftco-animate">
-                                <div class="img" style="background-image: url({{asset('foxtl/images/course-4.jpg')}});"></div>
-                                <div class="text pt-4">
-                                    <p class="meta d-flex">
-                                        <span><i class="icon-user mr-2"></i>Mr. Khan</span>
-                                        <span><i class="icon-table mr-2"></i>10 seats</span>
-                                        <span><i class="icon-calendar mr-2"></i>4 Years</span>
-                                    </p>
-                                    <h3><a href="#">Arabic Debate & Speech</a></h3>
                                     <p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
                                 </div>
                             </div>

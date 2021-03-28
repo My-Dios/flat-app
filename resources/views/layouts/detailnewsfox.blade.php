@@ -17,27 +17,27 @@
     <li class="nav-item">
         <a class="nav-link">&#8726</a>
     </li>
-        @if (Route::has('register'))
-        <li class="nav-item">
-            <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-        </li>
-        @endif
+    @if (Route::has('register'))
+    <li class="nav-item">
+        <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+    </li>
+    @endif
 @endsection
 
 
 @section('content')
 {{-- START jumbotron --}}
-    <section class="hero-wrap hero-wrap-2" style="background-image:url('/uploads/news/{{$post->picture}}');">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row no-gutters slider-text align-items-center justify-content-center">
-          <div class="col-md-9 ftco-animate text-center">
-            <h1 class="mb-2 bread">News</h1>
-            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>News <i class="ion-ios-arrow-forward"></i></span></p>
-          </div>
+<section class="hero-wrap hero-wrap-2" style="background-image:url('/uploads/news/{{$post->picture}}');">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row no-gutters slider-text align-items-center justify-content-center">
+        <div class="col-md-9 ftco-animate text-center">
+          <h1 class="mb-2 bread">News</h1>
+          <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>News <i class="ion-ios-arrow-forward"></i></span></p>
         </div>
       </div>
-    </section>
+    </div>
+</section>
 {{-- END jumbotron --}}
 
 {{-- START Detail News --}}
@@ -50,7 +50,7 @@
             <p>
               <img src="/uploads/news/{{$post->picture}}" alt="{{$post->title}}" class="img-fluid">
             </p>
-            <p class='text-justify'>{{$post->description}}</p>
+            <p class="text-justify">{!! $post->description !!}</p>
             <p class="mb-0"><a href="/news" class="btn btn-primary"><span class="ion-ios-arrow-round-back"> Back to News</a></p>
           </div>
         </div>

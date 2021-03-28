@@ -7,6 +7,7 @@ use DB;
 use App\Jumbotron;
 use File;
 use Auth;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class JumbotronController extends Controller
 {
@@ -48,6 +49,7 @@ class JumbotronController extends Controller
         ]);
 
         $gambar->move('uploads/jumbotrons/',$new_gambar);
+        Alert::success('Success', 'Billboard has been uploaded');
         return redirect('/admin');
     }
 
