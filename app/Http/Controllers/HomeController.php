@@ -34,7 +34,7 @@ class HomeController extends Controller
      */
     public function adminHome()
     {
-        Alert::success('Login Success', 'Welcome Administrator');
+        Alert::success('Welcome Admin UKM Bahasa-FLAT UIN Jakarta', 'Good Luck to Get the Best Results');
         return redirect('/admin');
     }
 }
