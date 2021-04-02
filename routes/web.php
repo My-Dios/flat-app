@@ -15,6 +15,7 @@
 Route::get('/', 'indexController@indexhome');
 Route::get('/news', 'indexController@indexnews');
 Route::get('/course', 'indexController@indexcourse');
+Route::get('/profile', 'indexController@indexprofile');
 
 // // Route Index Admin
 Route::get('/admin', 'indexAdminController@index')->middleware('is_admin');
@@ -43,6 +44,9 @@ Route::get('/flatjumbotrons/{id}', 'jumbotronController@show');
 Route::get('/flatjumbotrons/{id}/edit', 'jumbotronController@edit');
 Route::put('/flatjumbotrons/{id}', 'jumbotronController@update');
 Route::delete('/flatjumbotrons/{id}', 'jumbotronController@destroy');
+
+//// Route Profile
+
 
 // // Route Auth
 Auth::routes();

@@ -24,6 +24,11 @@ class indexController extends Controller
         return view('layouts.homefox', compact('post', 'postjumbotron'));
     }
 
+    public function indexprofile()
+    {
+        return view('layouts.profile');
+    }
+
     public function indexcourse()
     {
         return view('layouts.coursefox');

@@ -3,7 +3,7 @@
     <div class="sidebar">
         <!-- Sidebar user (optional) -->
         <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-            <div class="image">
+            <div class="img-circle">
                 <img src="{{asset('img/flaticon.png')}}" class="" alt="User Image">
             </div>
             <div class="info">
