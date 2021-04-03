@@ -57,7 +57,11 @@
                     <div class="dropdown-menu dropdown-menu-right bg-white" aria-labelledby="navbarDropdown">
 
                         <div class="text-center dropdown-item">
-                            <img style="border-radius:50%; border: 3px solid #fd5f01;" border-radius="50%" src="{{asset('img/guest.png')}}" alt="Yusuf Wijaya" title="Yusuf Wijaya" width="65" height="65" loading="lazy">
+                            @if (Auth::User()->profile)
+                                <img style="border-radius:50%; border: 3px solid #fd5f01;" border-radius="50%" src="/uploads/pp/{{Auth::user()->profile->profilepicture}}" alt="{{Auth::user()->name}}" title="{{Auth::User()->name}}" width="65" height="65" loading="lazy">
+                            @else
+                                <img style="border-radius:50%; border: 3px solid #fd5f01;" border-radius="50%" src="{{asset('img/guest.png')}}" alt="{{Auth::user()->name}}" title="{{Auth::User()->name}}" width="65" height="65" loading="lazy">
+                            @endif
                             <div class="u1ljgnwh mt-1">{{ Auth::user()->name }}</div>
                             <a class="info" href="/profile">My Profile</a>
                         </div>
@@ -74,7 +78,6 @@
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                             @csrf
                         </form>
-
 
                     </div>
                 </li>

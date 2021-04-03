@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use DB;
 use App\Berita;
 use App\Jumbotron;
+use App\Profile;
 use File;
 use Auth;
 
@@ -24,9 +25,15 @@ class indexController extends Controller
         return view('layouts.homefox', compact('post', 'postjumbotron'));
     }
 
-    public function indexprofile()
+    public function indexprofilecheck()
     {
-        return view('layouts.profile');
+        $query = Profile::where('user_id', Auth::id())->first();
+        if ($query == null) {
+            return view('layouts.profile');
+        } else {
+            $postprofile= Profile::orderBy('created_at','desc')->get();
+            return view('layouts.editprofile', compact('postprofile'));
+        }
     }
 
     public function indexcourse()

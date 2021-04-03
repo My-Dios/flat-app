@@ -23,7 +23,6 @@
     <link rel="stylesheet" href="{{asset('foxtl/css/flaticon.css')}}">
     <link rel="stylesheet" href="{{asset('foxtl/css/icomoon.css')}}">
     <link rel="stylesheet" href="{{asset('foxtl/css/style.css')}}">
-
   </head>
   <body>
 

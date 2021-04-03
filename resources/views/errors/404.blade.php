@@ -5,9 +5,23 @@
 @endsection
 
 @section('navbar')
-    <li class="nav-item active"><a href="/" class="nav-link">Home</a></li>
+    <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
 	<li class="nav-item"><a href="/course" class="nav-link">Courses</a></li>
 	<li class="nav-item"><a href="/news" class="nav-link">News</a></li>
+@endsection
+
+@section('navbarauth')
+    <li class="nav-item">
+        <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link">&#8726</a>
+    </li>
+        @if (Route::has('register'))
+        <li class="nav-item">
+            <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+        </li>
+        @endif
 @endsection
 
 @section('content')
