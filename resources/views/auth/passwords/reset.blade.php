@@ -1,7 +1,7 @@
 @extends('foxtl.foxmaster')
 
 @section('title')
-    Reset Password UKM Bahasa-FLAT UIN Jakarta
+    Reset &#9679; Password UKM Bahasa-FLAT UIN Jakarta
 @endsection
 
 @section('navbar')

@@ -1,7 +1,7 @@
 @extends('foxtl.foxmaster')
 
 @section('title')
-    Home UKM Bahasa-FLAT UIN Jakarta
+    Home &#9679; UKM Bahasa-FLAT UIN Jakarta
 @endsection
 
 @section('navbar')

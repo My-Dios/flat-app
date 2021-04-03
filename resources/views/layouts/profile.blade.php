@@ -1,7 +1,7 @@
 @extends('foxtl.foxmaster')
 
 @section('title')
-    My Profile UKM Bahasa-FLAT UIN Jakarta
+    My Profile &#9679; UKM Bahasa-FLAT UIN Jakarta
 @endsection
 
 @section('navbar')

@@ -1,7 +1,7 @@
 @extends('foxtl.foxmaster')
 
 @section('title')
-    404 Not Found
+    404 Not Found &#9679; UKM Bahasa-FLAT UIN Jakarta
 @endsection
 
 @section('navbar')

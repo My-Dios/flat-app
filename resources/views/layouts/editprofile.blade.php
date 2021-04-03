@@ -1,7 +1,7 @@
 @extends('foxtl.foxmaster')
 
 @section('title')
-    My Profile UKM Bahasa-FLAT UIN Jakarta
+    My Profile &#9679; UKM Bahasa-FLAT UIN Jakarta
 @endsection
 
 @section('navbar')
@@ -34,16 +34,14 @@
             <div class="col-md-4 border-right">
                 <div class="d-flex flex-column align-items-center text-center p-3 py-5">
                     <div class="profile-img">
-                        <img  class=" mt-5" src="/uploads/pp/{{Auth::User()->profile->profilepicture}}" width="90">
+                        @if (Auth::User()->profile->profilepicture == null)
+                            <img class="mt-5" src="{{asset('img/guest.png')}}" width="90">
+                        @else
+                            <img  class=" mt-5" src="/uploads/pp/{{Auth::User()->profile->profilepicture}}" width="90">
+                        @endif
                         <div class="file btn btn-lg btn-primary">
                             Change Picture
-                            <input type="file" class="form-control-file" id="picture" name = 'picture' value="{{old('picture', '')}}" required>
-                            <div class="invalid-feedback">
-                                Please insert a picture here.
-                            </div>
-                            <div class="valid-feedback">
-                                Nice Profile Picture!
-                            </div>
+                            <input type="file" class="form-control-file" id="picture" name = 'picture' value="{{old('picture', '')}}">
                         </div>
                     </div>
                     <span class="font-weight-bold">{{ Auth::User()->name }}</span>

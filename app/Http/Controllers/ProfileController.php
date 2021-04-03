@@ -89,8 +89,15 @@ class ProfileController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $gambar = $request->picture;
-        $new_gambar = time() . ' . ' . $gambar->getClientOriginalName();
+        $new_gambar = null;
+
+        if ($gambar = $request->picture) {
+            $new_gambar = time() . ' . ' . $gambar->getClientOriginalName();
+            $gambar->move('uploads/pp/',$new_gambar);
+        }
+        // $gambar = $request->picture;
+        // $new_gambar = time() . ' . ' . $gambar->getClientOriginalName();
+        // $gambar->move('uploads/pp/',$new_gambar);
 
         $update = Profile::where("id", $id)-> update([
            "instagramaccount" => $request["instagram_account"],
@@ -102,7 +109,6 @@ class ProfileController extends Controller
             'profilepicture' => $new_gambar,
             "user_id" => Auth::id()
         ]);
-        $gambar->move('uploads/pp/',$new_gambar);
         return redirect('/profile');
     }
 

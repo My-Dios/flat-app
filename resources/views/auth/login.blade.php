@@ -1,7 +1,7 @@
 @extends('foxtl.foxmaster')
 
 @section('title')
-    Login UKM Bahasa-FLAT UIN Jakarta
+    Login &#9679; UKM Bahasa-FLAT UIN Jakarta
 @endsection
 
 @section('navbar')
