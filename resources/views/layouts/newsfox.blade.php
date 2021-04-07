@@ -18,7 +18,7 @@
         <a class="nav-link">&#8726</a>
     </li>
     @if (Route::has('register'))
-    <li class="nav-item">
+    <li class="mr-6 nav-item">
         <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
     </li>
     @endif
@@ -65,7 +65,21 @@
                 </div>
             </div>
             @empty
-            <div class="col-md-6 col-lg-4 ftco-animate">
+                <div class="row justify-content-center mb-5 pb-2">
+                    <div class="col-md-8 text-center heading-section ftco-animate">
+                        <h3 class="">There are no posts</h3>
+                    </div>
+                </div>
+            @endforelse
+
+          </div>
+        </div>
+	</div>
+</section>
+{{-- END news --}}
+@endsection
+
+{{-- <div class="col-md-6 col-lg-4 ftco-animate">
                 <div class="blog-entry">
                     <a href="/news" class="block-20 d-flex align-items-end" style="background-image: url('{{asset('/uploads/news/default.jpg')}}');">
 						<div class="meta-date text-center p-2">
@@ -83,12 +97,4 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            @endforelse
-
-          </div>
-        </div>
-	</div>
-</section>
-{{-- END news --}}
-@endsection
+            </div> --}}

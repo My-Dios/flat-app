@@ -33,11 +33,11 @@
 
 {{-- START Navbar --}}
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco_navbar ftco-navbar-light" id="ftco-navbar">
-	<div class="container d-flex align-items-center px-4">
+	<div class="container-fluid-navigasi-bar d-flex align-items-center px-4">
 	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	    </button>
-	    <div class="collapse navbar-collapse" id="ftco-nav">
+	    <div class="ml-7 collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav mr-auto">
 	        	@yield('navbar')
 	        </ul>
@@ -49,7 +49,7 @@
                 @guest
                 @yield('navbarauth')
                 @else
-                <li class="nav-item dropdown">
+                <li class=" nav-item dropdown">
                     <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                         {{ Auth::user()->name }} <span class="caret"></span>
                     </a>
@@ -81,7 +81,7 @@
 
                     </div>
                 </li>
-                <li class="nav-item">
+                <li class="mr-6 nav-item">
                     <div class="nav-link" ><span class="icon-user"></span></div>
                 </li>
                 @endguest

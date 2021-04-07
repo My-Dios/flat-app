@@ -18,7 +18,7 @@
         <a class="nav-link">&#8726</a>
     </li>
         @if (Route::has('register'))
-        <li class="nav-item">
+        <li class="mr-6 nav-item">
             <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
         </li>
         @endif
@@ -41,6 +41,16 @@
 
     {{-- START course --}}
     <section class="ftco-section">
+		<div class="row justify-content-center mb-5 pb-2">
+            <div class="col-md-8 text-center heading-section ftco-animate">
+                <h3 class="">There are no posts</h3>
+            </div>
+        </div>
+	</section>
+    {{-- END course --}}
+
+    {{-- START course --}}
+    {{-- <section class="ftco-section">
 			<div class="container-fluid px-4">
 				<div class="row">
 					<div class="col-md-3 course ftco-animate">
@@ -58,6 +68,6 @@
 					</div>
 				</div>
 			</div>
-	</section>
+	</section> --}}
     {{-- END course --}}
 @endsection

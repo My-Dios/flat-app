@@ -472,6 +472,14 @@ pre {
   margin-right: auto;
   margin-left: auto; }
 
+.container-fluid-navigasi-bar {
+  background: #0d1128;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6649,6 +6657,10 @@ button.bg-dark:focus {
 .mx-5 {
   margin-right: 3rem !important; }
 
+.mr-6,
+.mx-6 {
+  margin-right: 5rem !important; }
+
 .mb-5,
 .my-5 {
   margin-bottom: 3rem !important; }
@@ -6656,6 +6668,10 @@ button.bg-dark:focus {
 .ml-5,
 .mx-5 {
   margin-left: 3rem !important; }
+
+.ml-7,
+.mx-7 {
+  margin-left: 6rem !important; }
 
 .p-0 {
   padding: 0 !important; }
@@ -8359,7 +8375,7 @@ h1, h2, h3, h4, h5,
         padding-right: 0 !important; } }
     .ftco-navbar-light.scrolled .navbar-toggler {
       border: none;
-      color: rgba(0, 0, 0, 0.5) !important;
+      color: #fff !important;
       border-color: rgba(0, 0, 0, 0.5) !important;
       cursor: pointer;
       padding-right: 0;
