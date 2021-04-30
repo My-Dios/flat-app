@@ -86,6 +86,7 @@
                     </div>
 
                     <div class="mt-5 text-right">
+                        <a href="/" class="btn btn-primary">Cancel</a>
                         <button class="btn btn-primary profile-button" type="submit">Save Profile</button>
                     </div>
 

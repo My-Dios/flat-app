@@ -28,7 +28,7 @@ Route::get('/flatnews/create', 'newsController@create');
 //simpan data di databasenya
 Route::post('/flatnews', 'newsController@store');
 //direct ke halaman detailnews dengan data sesuai idnya
-Route::get('/flatnews/{id}', 'newsController@show');
+Route::get('/flatnews/{id}', 'newsController@show')->name('detailpost');
 //direct ke halaman editnews sesuai idnya
 Route::get('/flatnews/{id}/edit', 'newsController@edit');
 //mengupdate dari databasenya sesuai idnya
@@ -53,3 +53,7 @@ Route::put('/profile/{id}', 'ProfileController@update');
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('admin/home', 'HomeController@adminHome')->name('admin.home')->middleware('is_admin');
+
+// // Route Comments
+Route::resource('comment', 'CommentController')->middleware('auth');
+

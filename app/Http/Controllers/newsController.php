@@ -18,6 +18,13 @@ class newsController extends Controller
         $this->middleware('is_admin')->only(['edit', 'update', 'destroy', 'create', 'store']);
     }
 
+    // public function editAll($id)
+    // {
+    //     $post = Post::find($id);
+    //     // dd($postlist);
+    //     return view('layouts.detailnewsfox', compact('post'));
+    // }
+
     /**
      * Show the form for creating a new resource.
      *
@@ -69,6 +76,7 @@ class newsController extends Controller
     public function show($id)
     {
         $post = Berita::find($id);
+         // dd($postlist);
         return view('layouts.detailnewsfox', compact('post'));
     }
 
