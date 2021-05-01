@@ -27,13 +27,13 @@
 
 @section('content')
 {{-- START jumbotron --}}
-<section class="hero-wrap hero-wrap-2" style="background-image:url('/uploads/news/{{$post->picture}}');">
+<section class="hero-wrap hero-wrap-2" style="background-image:url('/images/uploads/news/{{$post->picture}}');">
     <div class="overlay"></div>
     <div class="container">
       <div class="row no-gutters slider-text align-items-center justify-content-center">
         <div class="col-md-9 ftco-animate text-center">
           <h1 class="mb-2 bread">News</h1>
-          <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>News <i class="ion-ios-arrow-forward"></i></span></p>
+          <p class="breadcrumbs"><span class="mr-2"><a href="/">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>News <i class="ion-ios-arrow-forward"></i></span></p>
         </div>
       </div>
     </div>
@@ -48,7 +48,7 @@
             <h2 class="mb-3">{{$post->title}}</h2>
             <p class="text-justify">{{$post->openingsentence}}</p>
             <p>
-              <img src="/uploads/news/{{$post->picture}}" alt="{{$post->title}}" class="img-fluid">
+              <img src="/images/uploads/news/{{$post->picture}}" alt="{{$post->title}}" class="img-fluid">
             </p>
             <p class="text-justify">{!! $post->description !!}</p>
             <p class="mb-0"><a href="/news" class="btn btn-primary"><span class="ion-ios-arrow-round-back"> Back to News</a></p>
@@ -69,9 +69,9 @@
                     @forelse ($post->comments as $key => $comment)
                         <li class="comment">
                             @if ($comment->author->profile == null || $comment->author->profile->profilepicture == null)
-                                <img style="border-radius:50%; border: 2px solid #fd5f01;" border-radius="50%" src="{{asset('img/guest.png')}}" alt="{{Auth::user()->name}}" title="{{Auth::User()->name}}" width="65" height="65" loading="lazy">
+                                <img style="border-radius:50%; border: 2px solid #fd5f01;" border-radius="50%" src="{{asset('images/icon/guesticon.png')}}" alt="Profile Guest" title="Profile Picture Guest" width="65" height="65" loading="lazy">
                             @else
-                                <img style="border-radius:50%; border: 2px solid #fd5f01;" border-radius="50%" src="/uploads/pp/{{$comment->author->profile->profilepicture}}" alt="{{Auth::user()->name}}" title="{{Auth::User()->name}}" width="65" height="65" loading="lazy">
+                                <img style="border-radius:50%; border: 2px solid #fd5f01;" border-radius="50%" src="/images/uploads/pp/{{$comment->author->profile->profilepicture}}" alt="Profile Picture" width="65" height="65" loading="lazy">
                             @endif
                             <div class="comment-body">
                                 <h3>{{$comment->author->name}}</h3>
@@ -98,7 +98,7 @@
                             <textarea name="body" id="body" cols="30" rows="10" class="form-control"></textarea>
                             @error('body')
                             <div class="alert alert-danger">
-                                Please fill your comment.
+                               Please fill your comment up to 250 characters.
                             </div>
                             @enderror
                         </div>

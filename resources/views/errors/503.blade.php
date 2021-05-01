@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" href="{{asset('img/flaticon.png')}}">
+    <link rel="icon" href="{{asset('images/icon/flaticon.png')}}">
     <title>We&rsquo;ll be back soon!</title>
     <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css">
@@ -19,7 +19,7 @@
         <div class="container">
             <nav class="navbar navbar-dark bg-transparenet">
                 <a class="navbar-brand">
-                    <img src="{{asset('img/flaticon.png')}}" alt="logo">
+                    <img src="{{asset('images/icon/flaticon.png')}}" alt="logo">
                 </a>
                 <span class="navbar-text ml-auto d-none d-sm-inline-block">+62 822 5822 4790</span>
                 <span class="navbar-text d-none d-sm-inline-block">flat@uinjkt.ac.id</span>

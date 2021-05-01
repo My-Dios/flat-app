@@ -39,7 +39,7 @@ class CommentController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            "body" => 'required'
+            "body" => 'required|between:1,250'
         ]);
         // dd($request->all());
         $comment = Comment::create([

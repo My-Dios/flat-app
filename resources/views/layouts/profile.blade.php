@@ -34,7 +34,7 @@
             <div class="col-md-4 border-right">
                 <div class="d-flex flex-column align-items-center text-center p-3 py-5">
                     <div class="profile-img">
-                        <img class="mt-5" src="{{asset('img/guest.png')}}" width="90">
+                        <img class="mt-5" src="{{asset('images/uploads/pp/guest.png')}}" width="90">
                         <div class="file btn btn-lg btn-primary">
                             Change Picture
                             <input type="file" class="form-control-file" id="picture" name = 'picture' value="{{old('picture', '')}}" required>

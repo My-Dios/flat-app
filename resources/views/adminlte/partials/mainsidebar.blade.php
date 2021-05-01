@@ -4,7 +4,7 @@
         <!-- Sidebar user (optional) -->
         <div class="user-panel mt-3 pb-3 mb-3 d-flex">
             <div class="img-circle">
-                <img src="{{asset('img/flaticon.png')}}" class="" alt="User Image">
+                <img src="{{asset('images/icon/flaticon.png')}}" class="" alt="User Image">
             </div>
             <div class="info">
                 <a href="/admin" class="d-block">Admin FLAT UIN Jakarta</a>

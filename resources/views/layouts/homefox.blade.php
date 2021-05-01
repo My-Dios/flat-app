@@ -28,7 +28,7 @@
     <!-- START jumbotron -->
     <section class="home-slider owl-carousel">
         @forelse($postjumbotron as $key => $postjumbotron)
-        <div class="slider-item" style="background-image:url('/uploads/jumbotrons/{{$postjumbotron->picture}}');">
+        <div class="slider-item" style="background-image:url('images/uploads/jumbotrons/{{$postjumbotron->picture}}');">
       	    <div class="overlay"></div>
             <div class="container">
                 <div class="row no-gutters text-{{$postjumbotron->textalign}} slider-text align-items-center justify-content-{{$postjumbotron->justifycontent}}" data-scrollax-parent="true">
@@ -120,7 +120,7 @@
 			<div class="container">
 				<div class="row d-flex">
 					<div class="col-md-5 order-md-last wrap-about wrap-about d-flex align-items-stretch">
-						<div class="img" style="background-image: url({{asset('img/topik.JPG')}}); border"></div>
+						<div class="img" style="background-image: url({{asset('images/thisweb/topik.JPG')}}); border"></div>
 					</div>
 					<div class="col-md-7 wrap-about py-5 pr-md-4 ftco-animate">
           	<h2 class="mb-4">Vision</h2>
@@ -189,11 +189,11 @@
     {{-- END What we do --}}
 
     {{-- START Desc --}}
-    <section class="ftco-section ftco-counter img" id="section-counter" style="background-image: url({{asset('img/rame2.JPG')}});" data-stellar-background-ratio="0.5">
+    <section class="ftco-section ftco-counter img" id="section-counter" style="background-image: url({{asset('images/thisweb/rame2.JPG')}});" data-stellar-background-ratio="0.5">
     	<div class="container">
     		<div class="row justify-content-center mb-5 pb-2 d-flex">
     			<div class="col-md-6 align-items-stretch d-flex">
-    				<div class="img img-video d-flex align-items-center" style="background-image: url({{asset('img/botak.jpeg')}});">
+    				<div class="img img-video d-flex align-items-center" style="background-image: url({{asset('images/thisweb/botak.jpeg')}});">
     					<div class="video justify-content-center">
 
 								<a href="https://www.youtube.com/watch?v=psFxjZHUiIw" class="icon-video popup-vimeo d-flex justify-content-center align-items-center">
@@ -265,7 +265,7 @@
 						<p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country. But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their</p>
 					</div>
 					<div class="col-md-5 order-md-last wrap-about wrap-about d-flex align-items-stretch">
-						<div class="img" style="background-image: url({{asset('foxtl/images/about.jpg')}}); border"></div>
+						<div class="img" style="background-image: url({{asset('images/foxtl/about.jpg')}}); border"></div>
 					</div>
 				</div>
 			</div>
@@ -291,7 +291,7 @@
                         </div>
 			            <div class="row justify-content-around">
                             <div class="col-md-3 course ftco-animate">
-                                <div class="img" style="background-image: url({{asset('foxtl/images/course-1.jpg')}});"></div>
+                                <div class="img" style="background-image: url({{asset('images/foxtl/course-1.jpg')}});"></div>
                                 <div class="text pt-4">
                                     <p class="meta d-flex">
                                         <span><i class="icon-user mr-2"></i>Mr. Khan</span>
@@ -304,7 +304,7 @@
                             </div>
 
                             <div class="col-md-3 course ftco-animate">
-                                <div class="img" style="background-image: url({{asset('foxtl/images/course-2.jpg')}});"></div>
+                                <div class="img" style="background-image: url({{asset('images/foxtl/course-2.jpg')}});"></div>
                                 <div class="text pt-4">
                                     <p class="meta d-flex">
                                         <span><i class="icon-user mr-2"></i>Mr. Khan</span>
@@ -317,7 +317,7 @@
                             </div>
 
                             <div class="col-md-3 course ftco-animate">
-                                <div class="img" style="background-image: url({{asset('foxtl/images/course-3.jpg')}});"></div>
+                                <div class="img" style="background-image: url({{asset('images/foxtl/course-3.jpg')}});"></div>
                                 <div class="text pt-4">
                                     <p class="meta d-flex">
                                         <span><i class="icon-user mr-2"></i>Mr. Khan</span>
@@ -330,7 +330,7 @@
                             </div>
 
                             <div class="col-md-3 course ftco-animate">
-                                <div class="img" style="background-image: url({{asset('foxtl/images/course-4.jpg')}});"></div>
+                                <div class="img" style="background-image: url({{asset('images/foxtl/course-4.jpg')}});"></div>
                                 <div class="text pt-4">
                                     <p class="meta d-flex">
                                         <span><i class="icon-user mr-2"></i>Mr. Khan</span>
@@ -343,7 +343,7 @@
                             </div>
 
                             <div class="col-md-3 course ftco-animate">
-                                <div class="img" style="background-image: url({{asset('foxtl/images/course-4.jpg')}});"></div>
+                                <div class="img" style="background-image: url({{asset('images/foxtl/course-5.jpg')}});"></div>
                                 <div class="text pt-4">
                                     <p class="meta d-flex">
                                         <span><i class="icon-user mr-2"></i>Mr. Khan</span>
@@ -356,7 +356,7 @@
                             </div>
 
                             <div class="col-md-3 course ftco-animate">
-                                <div class="img" style="background-image: url({{asset('foxtl/images/course-4.jpg')}});"></div>
+                                <div class="img" style="background-image: url({{asset('images/foxtl/course-6.jpg')}});"></div>
                                 <div class="text pt-4">
                                     <p class="meta d-flex">
                                         <span><i class="icon-user mr-2"></i>Mr. Khan</span>
@@ -369,7 +369,7 @@
                             </div>
 
                             <div class="col-md-3 course ftco-animate">
-                                <div class="img" style="background-image: url({{asset('foxtl/images/course-4.jpg')}});"></div>
+                                <div class="img" style="background-image: url({{asset('images/foxtl/course-7.jpg')}});"></div>
                                 <div class="text pt-4">
                                     <p class="meta d-flex">
                                         <span><i class="icon-user mr-2"></i>Mr. Khan</span>
@@ -394,7 +394,7 @@
                         </div>
 			            <div class="row justify-content-around">
                             <div class="col-md-3 course ftco-animate">
-                                <div class="img" style="background-image: url({{asset('foxtl/images/course-1.jpg')}});"></div>
+                                <div class="img" style="background-image: url({{asset('images/foxtl/course-8.jpg')}});"></div>
                                 <div class="text pt-4">
                                     <p class="meta d-flex">
                                         <span><i class="icon-user mr-2"></i>Mr. Khan</span>
@@ -407,7 +407,7 @@
                             </div>
 
                             <div class="col-md-3 course ftco-animate">
-                                <div class="img" style="background-image: url({{asset('foxtl/images/course-1.jpg')}});"></div>
+                                <div class="img" style="background-image: url({{asset('images/foxtl/course-1.jpg')}});"></div>
                                 <div class="text pt-4">
                                     <p class="meta d-flex">
                                         <span><i class="icon-user mr-2"></i>Mr. Khan</span>
@@ -420,7 +420,7 @@
                             </div>
 
                             <div class="col-md-3 course ftco-animate">
-                                <div class="img" style="background-image: url({{asset('foxtl/images/course-4.jpg')}});"></div>
+                                <div class="img" style="background-image: url({{asset('images/foxtl/course-2.jpg')}});"></div>
                                 <div class="text pt-4">
                                     <p class="meta d-flex">
                                         <span><i class="icon-user mr-2"></i>Mr. Khan</span>
@@ -433,7 +433,7 @@
                             </div>
 
                             <div class="col-md-3 course ftco-animate">
-                                <div class="img" style="background-image: url({{asset('foxtl/images/course-4.jpg')}});"></div>
+                                <div class="img" style="background-image: url({{asset('images/foxtl/course-3.jpg')}});"></div>
                                 <div class="text pt-4">
                                     <p class="meta d-flex">
                                         <span><i class="icon-user mr-2"></i>Mr. Khan</span>
@@ -446,7 +446,7 @@
                             </div>
 
                             <div class="col-md-3 course ftco-animate">
-                                <div class="img" style="background-image: url({{asset('foxtl/images/course-2.jpg')}});"></div>
+                                <div class="img" style="background-image: url({{asset('images/foxtl/course-4.jpg')}});"></div>
                                 <div class="text pt-4">
                                     <p class="meta d-flex">
                                         <span><i class="icon-user mr-2"></i>Mr. Khan</span>
@@ -459,7 +459,7 @@
                             </div>
 
                             <div class="col-md-3 course ftco-animate">
-                                <div class="img" style="background-image: url({{asset('foxtl/images/course-3.jpg')}});"></div>
+                                <div class="img" style="background-image: url({{asset('images/foxtl/course-5.jpg')}});"></div>
                                 <div class="text pt-4">
                                     <p class="meta d-flex">
                                         <span><i class="icon-user mr-2"></i>Mr. Khan</span>
@@ -472,7 +472,7 @@
                             </div>
 
                             <div class="col-md-3 course ftco-animate">
-                                <div class="img" style="background-image: url({{asset('foxtl/images/course-4.jpg')}});"></div>
+                                <div class="img" style="background-image: url({{asset('images/foxtl/course-6.jpg')}});"></div>
                                 <div class="text pt-4">
                                     <p class="meta d-flex">
                                         <span><i class="icon-user mr-2"></i>Mr. Khan</span>
@@ -505,7 +505,7 @@
 					<div class="col-md-6 col-lg-3 ftco-animate">
 						<div class="staff">
 							<div class="img-wrap d-flex align-items-stretch">
-								<div class="img align-self-stretch" style="background-image: url({{asset('foxtl/images/teacher-1.jpg')}});"></div>
+								<div class="img align-self-stretch" style="background-image: url({{asset('images/foxtl/teacher-1.jpg')}});"></div>
 							</div>
 							<div class="text pt-3 text-center">
 								<h3>Bianca Wilson</h3>
@@ -525,7 +525,7 @@
 					<div class="col-md-6 col-lg-3 ftco-animate">
 						<div class="staff">
 							<div class="img-wrap d-flex align-items-stretch">
-								<div class="img align-self-stretch" style="background-image: url({{{asset('foxtl/images/teacher-2.jpg')}}});"></div>
+								<div class="img align-self-stretch" style="background-image: url({{{asset('images/foxtl/teacher-2.jpg')}}});"></div>
 							</div>
 							<div class="text pt-3 text-center">
 								<h3>Mitch Parker</h3>
@@ -545,7 +545,7 @@
 					<div class="col-md-6 col-lg-3 ftco-animate">
 						<div class="staff">
 							<div class="img-wrap d-flex align-items-stretch">
-								<div class="img align-self-stretch" style="background-image: url({{asset('foxtl/images/teacher-3.jpg')}});"></div>
+								<div class="img align-self-stretch" style="background-image: url({{asset('images/foxtl/teacher-3.jpg')}});"></div>
 							</div>
 							<div class="text pt-3 text-center">
 								<h3>Stella Smith</h3>
@@ -565,7 +565,7 @@
 					<div class="col-md-6 col-lg-3 ftco-animate">
 						<div class="staff">
 							<div class="img-wrap d-flex align-items-stretch">
-								<div class="img align-self-stretch" style="background-image: url({{asset('foxtl/images/teacher-4.jpg')}});"></div>
+								<div class="img align-self-stretch" style="background-image: url({{asset('images/foxtl/teacher-4.jpg')}});"></div>
 							</div>
 							<div class="text pt-3 text-center">
 								<h3>Monshe Henderson</h3>
@@ -602,7 +602,7 @@
                 @forelse($post as $key => $post)
                 <div class="col-md-6 col-lg-4 ftco-animate">
                     <div class="blog-entry">
-                        <a href="/flatnews/{{$post->id}}" class="block-20 d-flex align-items-end" style="background-image: url('/uploads/news/{{$post->picture}}');">
+                        <a href="/flatnews/{{$post->id}}" class="block-20 d-flex align-items-end" style="background-image: url('images/uploads/news/{{$post->picture}}');">
                             <div class="meta-date text-center p-2">
                                 <span class="yr">{{$post->created_at}}</span>
                             </div>
@@ -648,7 +648,7 @@
             <div class="carousel-testimony owl-carousel">
               <div class="item">
                 <div class="testimony-wrap d-flex">
-                  <div class="user-img mr-4" style="background-image: url({{asset('img/botak.jpeg')}})">
+                  <div class="user-img mr-4" style="background-image: url({{asset('images/foxtl/teacher-5.jpg')}})">
                   </div>
                   <div class="text ml-2">
                   	<span class="quote d-flex align-items-center justify-content-center">
@@ -662,7 +662,7 @@
               </div>
               <div class="item">
                 <div class="testimony-wrap d-flex">
-                  <div class="user-img mr-4" style="background-image: url({{asset('foxtl/images/teacher-2.jpg')}})">
+                  <div class="user-img mr-4" style="background-image: url({{asset('images/foxtl/teacher-6.jpg')}})">
                   </div>
                   <div class="text ml-2">
                   	<span class="quote d-flex align-items-center justify-content-center">
@@ -676,7 +676,7 @@
               </div>
               <div class="item">
                 <div class="testimony-wrap d-flex">
-                  <div class="user-img mr-4" style="background-image: url({{asset('foxtl/images/teacher-3.jpg')}})">
+                  <div class="user-img mr-4" style="background-image: url({{asset('images/foxtl/teacher-7.jpg')}})">
                   </div>
                   <div class="text ml-2">
                   	<span class="quote d-flex align-items-center justify-content-center">
@@ -690,7 +690,7 @@
               </div>
               <div class="item">
                 <div class="testimony-wrap d-flex">
-                  <div class="user-img mr-4" style="background-image: url({{asset('foxtl/images/teacher-4.jpg')}})">
+                  <div class="user-img mr-4" style="background-image: url({{asset('images/foxtl/teacher-8.jpg')}})">
                   </div>
                   <div class="text ml-2">
                   	<span class="quote d-flex align-items-center justify-content-center">
@@ -704,7 +704,7 @@
               </div>
               <div class="item">
                 <div class="testimony-wrap d-flex">
-                  <div class="user-img mr-4" style="background-image: url({{asset('foxtl/images/teacher-1.jpg')}})">
+                  <div class="user-img mr-4" style="background-image: url({{asset('images/foxtl/teacher-4.jpg')}})">
                   </div>
                   <div class="text ml-2">
                   	<span class="quote d-flex align-items-center justify-content-center">
@@ -728,28 +728,28 @@
     	<div class="container-wrap">
     		<div class="row no-gutters">
 					<div class="col-md-3 ftco-animate">
-						<a href="{{asset('foxtl/images/image_1.jpg')}}" class="gallery image-popup img d-flex align-items-center" style="background-image: url({{asset('foxtl/images/course-1.jpg')}});">
+						<a href="{{asset('images/foxtl/image_1.jpg')}}" class="gallery image-popup img d-flex align-items-center" style="background-image: url({{asset('images/foxtl/course-1.jpg')}});">
 							<div class="icon mb-4 d-flex align-items-center justify-content-center">
     						<span class="icon-instagram"></span>
     					</div>
 						</a>
 					</div>
 					<div class="col-md-3 ftco-animate">
-						<a href="{{asset('foxtl/images/image_2.jpg')}}" class="gallery image-popup img d-flex align-items-center" style="background-image: url({{asset('foxtl/images/image_2.jpg')}});">
+						<a href="{{asset('foxtl/images/image_2.jpg')}}" class="gallery image-popup img d-flex align-items-center" style="background-image: url({{asset('images/foxtl/image_2.jpg')}});">
 							<div class="icon mb-4 d-flex align-items-center justify-content-center">
     						<span class="icon-instagram"></span>
     					</div>
 						</a>
 					</div>
 					<div class="col-md-3 ftco-animate">
-						<a href="{{asset('foxtl/images/image_3.jpg')}}" class="gallery image-popup img d-flex align-items-center" style="background-image: url({{asset('foxtl/images/image_3.jpg')}});">
+						<a href="{{asset('images/foxtl/image_3.jpg')}}" class="gallery image-popup img d-flex align-items-center" style="background-image: url({{asset('images/foxtl/image_3.jpg')}});">
 							<div class="icon mb-4 d-flex align-items-center justify-content-center">
     						<span class="icon-instagram"></span>
     					</div>
 						</a>
 					</div>
 					<div class="col-md-3 ftco-animate">
-						<a href="{{asset('foxtl/images/image_4.jpg')}}" class="gallery image-popup img d-flex align-items-center" style="background-image: url({{asset('foxtl/images/image_4.jpg')}});">
+						<a href="{{asset('images/foxtl/image_4.jpg')}}" class="gallery image-popup img d-flex align-items-center" style="background-image: url({{asset('images/foxtl/image_4.jpg')}});">
 							<div class="icon mb-4 d-flex align-items-center justify-content-center">
     						<span class="icon-instagram"></span>
     					</div>

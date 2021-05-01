@@ -61,7 +61,7 @@ class newsController extends Controller
             'picture' => $new_gambar,
         ]);
 
-        $gambar->move('uploads/news/',$new_gambar);
+        $gambar->move('images/uploads/news/',$new_gambar);
         Alert::success('Success', 'News has been uploaded');
 
         return redirect('/admin');
@@ -110,7 +110,7 @@ class newsController extends Controller
             "description" => $request["description"],
             'picture' => $new_gambar,
         ]);
-        $gambar->move('uploads/news/',$new_gambar);
+        $gambar->move('images/uploads/news/',$new_gambar);
         return redirect('/admin');
     }
 

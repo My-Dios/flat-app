@@ -35,9 +35,9 @@
                 <div class="d-flex flex-column align-items-center text-center p-3 py-5">
                     <div class="profile-img">
                         @if (Auth::User()->profile->profilepicture == null)
-                            <img class="mt-5" src="{{asset('img/guest.png')}}" width="90">
+                            <img class="mt-5" src="{{asset("images/uploads/pp/guest.png")}}" alt="guest" width="90">
                         @else
-                            <img  class=" mt-5" src="/uploads/pp/{{Auth::User()->profile->profilepicture}}" width="90">
+                            <img  class=" mt-5" src="images/uploads/pp/{{Auth::User()->profile->profilepicture}}"  alt="Profile Picture" width="90">
                         @endif
                         <div class="file btn btn-lg btn-primary">
                             Change Picture

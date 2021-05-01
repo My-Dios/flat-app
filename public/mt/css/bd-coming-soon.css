@@ -1,6 +1,6 @@
 body {
   font-family: 'Karla', sans-serif;
-  background-image: linear-gradient(rgba(253,126,20, 0.5), rgba(253,126,20, 0.5)),url("../images/mt.JPG");
+  background-image: linear-gradient(rgba(253,126,20, 0.5), rgba(253,126,20, 0.5)),url("../../images/mt/mt.JPG");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

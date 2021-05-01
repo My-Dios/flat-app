@@ -3,7 +3,7 @@
     <div class="container">
     	<div class="row no-gutters d-flex align-items-center align-items-stretch">
     		<div class="col-md-4 d-flex align-items-center py-4">
-    			<img src="{{asset('img/LOGO_UIN_SYARIF_HIDAYATULLAH_JAKARTA.png')}}" alt="Logo FLAT UIN Jakarta" width="75px">
+    			<img src="{{asset('images/icon/uinjakartaicon.png')}}" alt="Logo UIN Jakarta" width="75px">
     		</div>
 	    	<div class="col-lg-8 d-block">
 		    	<div class="row d-flex">
@@ -22,7 +22,7 @@
 						</div>
 					</div>
                     <div class="col-md-4 topper d-flex align-items-center py-4 justify-content-end">
-					    <img src="{{asset('img/flaticon.png')}}" alt="Logo FLAT UIN Jakarta" width="90px">
+					    <img src="{{asset('images/icon/flaticon.png')}}" alt="Logo FLAT UIN Jakarta" width="90px">
 					</div>
 				</div>
 			</div>
@@ -58,9 +58,9 @@
 
                         <div class="text-center dropdown-item">
                             @if (Auth::User()->profile == null || Auth::User()->profile->profilepicture == null)
-                                <img style="border-radius:50%; border: 3px solid #fd5f01;" border-radius="50%" src="{{asset('img/guest.png')}}" alt="{{Auth::user()->name}}" title="{{Auth::User()->name}}" width="65" height="65" loading="lazy">
+                                <img style="border-radius:50%; border: 3px solid #fd5f01;" border-radius="50%" src="{{asset('images/icon/guesticon.png')}}" alt="{{Auth::user()->name}}" title="{{Auth::User()->name}}" width="65" height="65" loading="lazy">
                             @else
-                                <img style="border-radius:50%; border: 3px solid #fd5f01;" border-radius="50%" src="/uploads/pp/{{Auth::user()->profile->profilepicture}}" alt="{{Auth::user()->name}}" title="{{Auth::User()->name}}" width="65" height="65" loading="lazy">
+                                <img style="border-radius:50%; border: 3px solid #fd5f01;" border-radius="50%" src="/images/uploads/pp/{{Auth::user()->profile->profilepicture}}" alt="{{Auth::user()->name}}" title="{{Auth::User()->name}}" width="65" height="65" loading="lazy">
                             @endif
                             <div class="mt-1">{{ Auth::user()->name }}</div>
                             <a class="info" href="/profile">My Profile</a>

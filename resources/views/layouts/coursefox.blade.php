@@ -26,7 +26,7 @@
 
 @section('content')
     {{-- START jumbotron --}}
-    <section class="hero-wrap hero-wrap-2" style="background-image: url('{{asset('foxtl/images/bg_1.jpg')}}');">
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('{{asset('images/foxtl/bg_1.jpg')}}');">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center">

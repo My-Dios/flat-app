@@ -53,7 +53,7 @@ class ProfileController extends Controller
             "user_id" => Auth::id()
         ]);
 
-        $gambar->move('uploads/pp/',$new_gambar);
+        $gambar->move('images/uploads/pp/',$new_gambar);
 
         return redirect('/profile');
     }
@@ -93,7 +93,7 @@ class ProfileController extends Controller
 
         if ($gambar = $request->picture) {
             $new_gambar = time() . ' . ' . $gambar->getClientOriginalName();
-            $gambar->move('uploads/pp/',$new_gambar);
+            $gambar->move('images/uploads/pp/',$new_gambar);
         }
         // $gambar = $request->picture;
         // $new_gambar = time() . ' . ' . $gambar->getClientOriginalName();

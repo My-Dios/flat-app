@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Admin &#9679; UKM Bahasa-FLAT UIN Jakarta</title>
-  <link rel="icon" href="{{asset('img/flaticon.png')}}">
+  <link rel="icon" href="{{asset('images/icon/flaticon.png')}}">
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.4/summernote.css" rel="stylesheet">

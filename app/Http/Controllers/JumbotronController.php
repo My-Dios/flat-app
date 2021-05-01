@@ -48,7 +48,7 @@ class JumbotronController extends Controller
             "justifycontent" => $request["justifycontent"],
         ]);
 
-        $gambar->move('uploads/jumbotrons/',$new_gambar);
+        $gambar->move('images/uploads/jumbotrons/',$new_gambar);
         Alert::success('Success', 'Billboard has been uploaded');
         return redirect('/admin');
     }
@@ -98,7 +98,7 @@ class JumbotronController extends Controller
             "justifycontent" => $request["justifycontent"],
         ]);
 
-        $gambar->move('uploads/jumbotrons/',$new_gambar);
+        $gambar->move('images/uploads/jumbotrons/',$new_gambar);
         return redirect('/admin');
     }
 

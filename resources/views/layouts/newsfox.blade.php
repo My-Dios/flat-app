@@ -26,7 +26,7 @@
 
 @section('content')
 {{-- START jumbotron --}}
-    <section class="hero-wrap hero-wrap-2" style="background-image: url('{{asset('foxtl/images/bg_1.jpg')}}');">
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('{{asset('images/foxtl/bg_1.jpg')}}');">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center">
@@ -47,7 +47,7 @@
             @forelse($post as $key => $post)
             <div class="col-md-6 col-lg-4 ftco-animate">
                 <div class="blog-entry">
-                    <a href="/news/{{$post->id}}" class="block-20 d-flex align-items-end" style="background-image: url('/uploads/news/{{$post->picture}}');">
+                    <a href="/news/{{$post->id}}" class="block-20 d-flex align-items-end" style="background-image: url('images/uploads/news/{{$post->picture}}');">
 				        <div class="meta-date text-center p-2">
                             <span class="yr">{{$post->created_at}}</span>
                         </div>

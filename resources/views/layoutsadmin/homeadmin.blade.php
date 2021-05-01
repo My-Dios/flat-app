@@ -42,7 +42,7 @@
                                             <td>{{substr($post->openingsentence, 0, 35)}}...</td>
                                             <td class="card-text">{{substr($post->description, 0, 50)}}...</td>
                                             <td align='center'>
-                                                <img style="width: 100px;" src="/uploads/news/{{$post->picture}}" alt="{{$post->title}}" class="card-img-top"/>
+                                                <img style="width: 100px;" src="images/uploads/news/{{$post->picture}}" alt="{{$post->title}}" class="card-img-top"/>
                                             </td>
                                             <td align='center'>
                                                 <a href="/flatnews/{{$post->id}}" class="btn btn-info btn-sm mb-2 pl-3 pr-3">Show</a>
@@ -184,7 +184,7 @@
                                             <td align='center'>{{$postjumbotron->textalign}}</td>
                                             <td align='center'>{{$postjumbotron->justifycontent}}</td>
                                             <td align='center'>
-                                                <img style="width: 100px;" src="/uploads/jumbotrons/{{$postjumbotron->picture}}" alt="{{$postjumbotron->title}}" class="card-img-top"/>
+                                                <img style="width: 100px;" src="images/uploads/jumbotrons/{{$postjumbotron->picture}}" alt="{{$postjumbotron->title}}" class="card-img-top"/>
                                             </td>
                                             <td align='center'>
                                                 <a href="/" class="btn btn-info btn-sm mb-2 pl-3 pr-3">Show</a>
