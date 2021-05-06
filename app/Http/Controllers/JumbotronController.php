@@ -23,7 +23,7 @@ class JumbotronController extends Controller
      */
     public function create()
     {
-        return view('layoutsadmin.createjumbotrons');
+        return view('layoutsadmin.homedatabase.jumbotrons.createjumbotrons');
     }
 
     /**
@@ -73,7 +73,7 @@ class JumbotronController extends Controller
     public function edit($id)
     {
         $postjumbotron = Jumbotron::find($id);
-        return view('layoutsadmin.editjumbotrons', compact('postjumbotron'));
+        return view('layoutsadmin.homedatabase.jumbotrons.editjumbotrons', compact('postjumbotron'));
     }
 
     /**

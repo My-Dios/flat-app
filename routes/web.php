@@ -18,7 +18,8 @@ Route::get('/course', 'indexController@indexcourse')->middleware('auth');
 Route::get('/profile', 'indexController@indexprofilecheck')->middleware('auth');
 
 // // Route Index Admin
-Route::get('/admin', 'indexAdminController@index')->middleware('is_admin');
+Route::get('/admin', 'indexAdminController@indexhomeadmin')->middleware('is_admin');
+Route::get('/adminnews', 'indexAdminController@indexnewsadmin')->middleware('is_admin');
 
 // // Route News
 //mengambil data dari database untuk di buka di halaman homeadmin

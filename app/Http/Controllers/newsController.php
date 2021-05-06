@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use DB;
 use App\Berita;
 use App\Jumbotron;
+use App\Comment;
+use App\User;
 use File;
 use Auth;
 use RealRashid\SweetAlert\Facades\Alert;
@@ -32,7 +34,7 @@ class newsController extends Controller
      */
     public function create()
     {
-        return view('layoutsadmin.createnews');
+        return view('layoutsadmin.newsdatabase.createnews');
     }
 
     /**
@@ -64,7 +66,7 @@ class newsController extends Controller
         $gambar->move('images/uploads/news/',$new_gambar);
         Alert::success('Success', 'News has been uploaded');
 
-        return redirect('/admin');
+        return redirect('/adminnews');
     }
 
     /**
@@ -77,7 +79,7 @@ class newsController extends Controller
     {
         $post = Berita::find($id);
          // dd($postlist);
-        return view('layouts.detailnewsfox', compact('post'));
+        return view('layouts.news.detailnewsfox', compact('post'));
     }
 
     /**
@@ -89,7 +91,7 @@ class newsController extends Controller
     public function edit($id)
     {
         $post = Berita::find($id);
-        return view('layoutsadmin.editnews', compact('post'));
+        return view('layoutsadmin.newsdatabase.editnews', compact('post'));
     }
 
     /**
@@ -111,7 +113,7 @@ class newsController extends Controller
             'picture' => $new_gambar,
         ]);
         $gambar->move('images/uploads/news/',$new_gambar);
-        return redirect('/admin');
+        return redirect('/adminnews');
     }
 
     /**
@@ -123,6 +125,7 @@ class newsController extends Controller
     public function destroy($id)
     {
         $delete = Berita::destroy($id);
-        return redirect('/admin');
+        $delete = Comment::destroy($id);
+        return redirect('/adminnews');
     }
 }

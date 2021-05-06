@@ -15,29 +15,29 @@ class indexController extends Controller
     public function indexnews()
     {
         $post= Berita::orderBy('created_at','desc')->get();
-        return view('layouts.newsfox', compact('post'));
+        return view('layouts.news.newsfox', compact('post'));
     }
 
     public function indexhome()
     {
         $post= Berita::orderBy('created_at','desc')->limit(3)->get();
         $postjumbotron= Jumbotron::orderBy('created_at','desc')->get();
-        return view('layouts.homefox', compact('post', 'postjumbotron'));
+        return view('layouts.home.homefox', compact('post', 'postjumbotron'));
     }
 
     public function indexprofilecheck()
     {
         $query = Profile::where('user_id', Auth::id())->first();
         if ($query == null) {
-            return view('layouts.profile');
+            return view('layouts.myprofile.profile');
         } else {
             $postprofile= Profile::orderBy('created_at','desc')->get();
-            return view('layouts.editprofile', compact('postprofile'));
+            return view('layouts.myprofile.editprofile', compact('postprofile'));
         }
     }
 
     public function indexcourse()
     {
-        return view('layouts.coursefox');
+        return view('layouts.course.coursefox');
     }
 }
