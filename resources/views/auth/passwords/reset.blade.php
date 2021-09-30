@@ -1,10 +1,10 @@
 @extends('foxtl.foxmaster')
 
-@section('title')
+{{-- @section('title')
     Reset &#9679; Password UKM Bahasa-FLAT UIN Jakarta
-@endsection
+@endsection --}}
 
-@section('navbar')
+{{-- @section('navbar')
     <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
 	<li class="nav-item"><a href="/course" class="nav-link">Courses</a></li>
 	<li class="nav-item"><a href="/news" class="nav-link">News</a></li>
@@ -18,11 +18,11 @@
         <a class="nav-link">&#8726</a>
     </li>
         @if (Route::has('register'))
-        <li class="mr-6 nav-item">
+        <li class="nav-item">
             <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
         </li>
         @endif
-@endsection
+@endsection --}}
 
 @section('content')
 <div class="container">

@@ -27,4 +27,11 @@ class ResetPasswordController extends Controller
      * @var string
      */
     protected $redirectTo = RouteServiceProvider::HOME;
+
+    public function showLoginForm()
+    {
+        $title = 'Login';
+
+        return view('auth.login', compact('title'));
+    }
 }

@@ -1,7 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>@yield('title')</title>
+    <title>
+        {{-- @if (isset($title) == !null)
+            {{$title}} &#9679; UKM Bahasa-FLAT UIN Jakarta
+        @else
+            Asu &#9679; UKM Bahasa-FLAT UIN Jakarta
+        @endif --}}
+        {{ isset($title) ? $title : 'Default' }} &#9679; UKM Bahasa-FLAT UIN Jakarta
+        {{-- {{isset($title) ? $title : 'tite'}} &#9679; UKM Bahasa-FLAT UIN Jakarta --}}
+        {{-- @yield('title') --}}
+    </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 

@@ -19,4 +19,11 @@ class ForgotPasswordController extends Controller
     */
 
     use SendsPasswordResetEmails;
+
+    public function showLoginForm()
+    {
+        $title = 'Login';
+
+        return view('auth.login', compact('title'));
+    }
 }

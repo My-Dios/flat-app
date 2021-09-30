@@ -17,7 +17,7 @@ class CommentController extends Controller
     public function index()
     {
         $comment = Comment::all();
-        return redirect('layouts.detailnewsfox', compact('comment'));
+        return redirect('layouts.detailnewsfox', compact('comment'), ["title" => "News"]);
     }
 
     /**

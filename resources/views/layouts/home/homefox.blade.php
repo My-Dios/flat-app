@@ -1,10 +1,10 @@
 @extends('foxtl.foxmaster')
 
-@section('title')
+{{-- @section('title')
     Home &#9679; UKM Bahasa-FLAT UIN Jakarta
-@endsection
+@endsection --}}
 
-@section('navbar')
+{{-- @section('navbar')
     <li class="nav-item active"><a href="/" class="nav-link">Home</a></li>
 	<li class="nav-item"><a href="/course" class="nav-link">Courses</a></li>
 	<li class="nav-item"><a href="/news" class="nav-link">News</a></li>
@@ -18,34 +18,34 @@
         <a class="nav-link">&#8726</a>
     </li>
         @if (Route::has('register'))
-        <li class="mr-6 nav-item">
+        <li class="nav-item">
             <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
         </li>
         @endif
-@endsection
+@endsection --}}
 
 @section('content')
     <!-- START jumbotron -->
     <section class="home-slider owl-carousel">
         @forelse($postjumbotron as $key => $postjumbotron)
-        <div class="slider-item" style="background-image:url('images/uploads/jumbotrons/{{$postjumbotron->picture}}');">
-      	    <div class="overlay"></div>
-            <div class="container">
-                <div class="row no-gutters text-{{$postjumbotron->textalign}} slider-text align-items-center justify-content-{{$postjumbotron->justifycontent}}" data-scrollax-parent="true">
-                    <div class="col-md-6 ftco-animate">
-                        <h1 class="mb-4">{{$postjumbotron->title}}</h1>
-                        <p>{{$postjumbotron->sentence}}</p>
-                        <p><a href="{{$postjumbotron->btnlink}}" class="btn btn-primary px-4 py-3 mt-3" target="_blank">{{$postjumbotron->btnname}}</a></p>
+                <div class="slider-item" style="background-image:url('images/uploads/jumbotrons/{{$postjumbotron->picture}}');">
+                    <div class="overlay"></div>
+                    <div class="container">
+                        <div class="row no-gutters text-{{$postjumbotron->textalign}} slider-text align-items-center justify-content-{{$postjumbotron->justifycontent}}" data-scrollax-parent="true">
+                            <div class="col-md-6 ftco-animate">
+                                <h1 class="mb-4">{{$postjumbotron->title}}</h1>
+                                <p>{{$postjumbotron->sentence}}</p>
+                                <p><a href="{{$postjumbotron->btnlink}}" class="btn btn-primary px-4 py-3 mt-3" target="_blank">{{$postjumbotron->btnname}}</a></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        @empty
-        <div class="row justify-content-center mb-5 pb-2">
-            <div class="col-md-8 text-center heading-section ftco-animate">
-                <h3 class="">There are no posts</h3>
-            </div>
-        </div>
+            @empty
+                <div class="row justify-content-center mb-5 pb-2">
+                    <div class="col-md-8 text-center heading-section ftco-animate">
+                        <h3 class="">There are no posts</h3>
+                    </div>
+                </div>
         @endforelse
     </section>
     <!-- END jumbotron -->
@@ -254,26 +254,8 @@
     </section>
     {{-- END Desc --}}
 
-    {{-- START Desc 2 --}}
-    <section class="ftco-section ftco-no-pt ftc-no-pb">
-			<div class="container">
-				<div class="row d-flex">
-                    <div class="col-md-7 wrap-about py-5 pr-md-4 ftco-animate fadeInUp ftco-animated">
-          	            <h2 class="mb-4">Fox University Stablished Since 1960</h2>
-						<p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word.</p>
-						<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-						<p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country. But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their</p>
-					</div>
-					<div class="col-md-5 order-md-last wrap-about wrap-about d-flex align-items-stretch">
-						<div class="img" style="background-image: url({{asset('images/foxtl/about.jpg')}}); border"></div>
-					</div>
-				</div>
-			</div>
-	</section>
-    {{-- END Desc 2 --}}
-
     {{-- START Course --}}
-	<section class="ftco-section">
+	<section class="ftco-section bg-light">
 		<div class="container-fluid px-4">
 			<div class="row justify-content-center mb-5 pb-2">
                 <div class="col-md-8 text-center heading-section ftco-animate">
@@ -491,9 +473,10 @@
 		</div>
 	</section>
     {{-- END Course --}}
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f5f6fa" fill-opacity="1" d="M0,128L48,160C96,192,192,256,288,245.3C384,235,480,149,576,117.3C672,85,768,107,864,133.3C960,160,1056,192,1152,208C1248,224,1344,224,1392,224L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
 
     {{-- START Certified Teachers --}}
-	<section class="ftco-section bg-light">
+	<section class="ftco-section">
 			<div class="container-fluid px-4">
 				<div class="row justify-content-center mb-5 pb-2">
           <div class="col-md-8 text-center heading-section ftco-animate">
@@ -513,12 +496,9 @@
 								<div class="faded">
 									<p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
 									<ul class="ftco-social text-center">
-		                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-		                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-		                <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
-		                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-		              </ul>
-	              </div>
+		                                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+		                            </ul>
+	                        </div>
 							</div>
 						</div>
 					</div>
@@ -533,12 +513,9 @@
 								<div class="faded">
 									<p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
 									<ul class="ftco-social text-center">
-		                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-		                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-		                <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
-		                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-		              </ul>
-	              </div>
+		                                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+		                            </ul>
+	                            </div>
 							</div>
 						</div>
 					</div>
@@ -553,12 +530,9 @@
 								<div class="faded">
 									<p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
 									<ul class="ftco-social text-center">
-		                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-		                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-		                <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
-		                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-		              </ul>
-	              </div>
+		                                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+		                            </ul>
+	                            </div>
 							</div>
 						</div>
 					</div>
@@ -573,12 +547,9 @@
 								<div class="faded">
 									<p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
 									<ul class="ftco-social text-center">
-		                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-		                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-		                <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
-		                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-		              </ul>
-	              </div>
+		                                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+		                            </ul>
+	                            </div>
 							</div>
 						</div>
 					</div>
@@ -587,6 +558,7 @@
 	</section>
     {{-- END Certified Teachers --}}
 
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f5f6fa" fill-opacity="1" d="M0,128L48,160C96,192,192,256,288,245.3C384,235,480,149,576,117.3C672,85,768,107,864,133.3C960,160,1056,192,1152,208C1248,224,1344,224,1392,224L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
     {{-- START Recent News --}}
 	<section class="ftco-section bg-light">
 		<div class="container">
@@ -634,8 +606,111 @@
 	</section>
     {{-- END Recent News --}}
 
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f5f6fa" fill-opacity="1" d="M0,96L60,96C120,96,240,96,360,80C480,64,600,32,720,58.7C840,85,960,171,1080,176C1200,181,1320,107,1380,69.3L1440,32L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
     {{-- START Testimoni --}}
 	<section class="ftco-section testimony-section">
+        <div class="container">
+            <div class="row justify-content-center mb-5 pb-2">
+                <div class="col-md-8 text-center heading-section ftco-animate">
+                    <h2 class="mb-4">Student Says About Us</h2>
+                    <p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
+                </div>
+            </div>
+            <div class="row ftco-animate justify-content-center">
+                <div class="col-md-12">
+                    <div class="carousel-testimony owl-carousel">
+                        @forelse ($posttestimony as $key => $posttestimony)
+                        <div class="item">
+                            <div class="testimony-wrap d-flex">
+                                <div class="user-img mr-4" style="background-image:url('images/uploads/testimony/{{$posttestimony->picture}}');">
+                                </div>
+                                <div class="text ml-2">
+                                    <span class="quote d-flex align-items-center justify-content-center">
+                                        <i class="icon-quote-left"></i>
+                                    </span>
+                                    <p>{{$posttestimony->sentence}}</p>
+                                    <p class="name">{{$posttestimony->name}}</p>
+                                    <span class="position">{{$posttestimony->position}}</span>
+                                </div>
+                            </div>
+                        </div>
+                        @empty
+                        <div class="item">
+                            <div class="testimony-wrap d-flex">
+                                <div class="text ml-2">
+                                    <span class="quote d-flex align-items-center justify-content-center">
+                                        <i class="icon-quote-left"></i>
+                                    </span>
+                                    <p>No Testimonials</p>
+                                </div>
+                            </div>
+                        </div>
+                        @endforelse
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{-- END Testimoni --}}
+
+    {{-- START galery --}}
+	<section class="ftco-gallery">
+    	<div class="container-wrap">
+    		<div class="row no-gutters">
+					<div class="col-md-3 ftco-animate">
+						<a href="{{asset('images/foxtl/image_1.jpg')}}" class="gallery image-popup img d-flex align-items-center" style="background-image: url({{asset('images/foxtl/course-1.jpg')}});">
+							<div class="icon mb-4 d-flex align-items-center justify-content-center">
+    						<span class="icon-instagram"></span>
+    					</div>
+						</a>
+					</div>
+					<div class="col-md-3 ftco-animate">
+						<a href="{{asset('foxtl/images/image_2.jpg')}}" class="gallery image-popup img d-flex align-items-center" style="background-image: url({{asset('images/foxtl/image_2.jpg')}});">
+							<div class="icon mb-4 d-flex align-items-center justify-content-center">
+    						<span class="icon-instagram"></span>
+    					</div>
+						</a>
+					</div>
+					<div class="col-md-3 ftco-animate">
+						<a href="{{asset('images/foxtl/image_3.jpg')}}" class="gallery image-popup img d-flex align-items-center" style="background-image: url({{asset('images/foxtl/image_3.jpg')}});">
+							<div class="icon mb-4 d-flex align-items-center justify-content-center">
+    						<span class="icon-instagram"></span>
+    					</div>
+						</a>
+					</div>
+					<div class="col-md-3 ftco-animate">
+						<a href="{{asset('images/foxtl/image_4.jpg')}}" class="gallery image-popup img d-flex align-items-center" style="background-image: url({{asset('images/foxtl/image_4.jpg')}});">
+							<div class="icon mb-4 d-flex align-items-center justify-content-center">
+    						<span class="icon-instagram"></span>
+    					</div>
+						</a>
+					</div>
+            </div>
+    	</div>
+    </section>
+    {{-- END galery --}}
+@endsection
+
+    {{-- START Desc 2 Backup--}}
+    {{-- <section class="ftco-section ftco-no-pt ftc-no-pb">
+			<div class="container">
+				<div class="row d-flex">
+                    <div class="col-md-7 wrap-about py-5 pr-md-4 ftco-animate fadeInUp ftco-animated">
+          	            <h2 class="mb-4">Fox University Stablished Since 1960</h2>
+						<p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word.</p>
+						<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+						<p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country. But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their</p>
+					</div>
+					<div class="col-md-5 order-md-last wrap-about wrap-about d-flex align-items-stretch">
+						<div class="img" style="background-image: url({{asset('images/foxtl/about.jpg')}}); border"></div>
+					</div>
+				</div>
+			</div>
+	</section> --}}
+    {{-- END Desc 2 Backup--}}
+
+    {{-- START Testimoni Backup--}}
+	{{-- <section class="ftco-section testimony-section">
       <div class="container">
         <div class="row justify-content-center mb-5 pb-2">
           <div class="col-md-8 text-center heading-section ftco-animate">
@@ -720,43 +795,6 @@
           </div>
         </div>
       </div>
-    </section>
-    {{-- END Testimoni --}}
+    </section> --}}
+    {{-- END Testimoni Backup--}}
 
-    {{-- START galery --}}
-	<section class="ftco-gallery">
-    	<div class="container-wrap">
-    		<div class="row no-gutters">
-					<div class="col-md-3 ftco-animate">
-						<a href="{{asset('images/foxtl/image_1.jpg')}}" class="gallery image-popup img d-flex align-items-center" style="background-image: url({{asset('images/foxtl/course-1.jpg')}});">
-							<div class="icon mb-4 d-flex align-items-center justify-content-center">
-    						<span class="icon-instagram"></span>
-    					</div>
-						</a>
-					</div>
-					<div class="col-md-3 ftco-animate">
-						<a href="{{asset('foxtl/images/image_2.jpg')}}" class="gallery image-popup img d-flex align-items-center" style="background-image: url({{asset('images/foxtl/image_2.jpg')}});">
-							<div class="icon mb-4 d-flex align-items-center justify-content-center">
-    						<span class="icon-instagram"></span>
-    					</div>
-						</a>
-					</div>
-					<div class="col-md-3 ftco-animate">
-						<a href="{{asset('images/foxtl/image_3.jpg')}}" class="gallery image-popup img d-flex align-items-center" style="background-image: url({{asset('images/foxtl/image_3.jpg')}});">
-							<div class="icon mb-4 d-flex align-items-center justify-content-center">
-    						<span class="icon-instagram"></span>
-    					</div>
-						</a>
-					</div>
-					<div class="col-md-3 ftco-animate">
-						<a href="{{asset('images/foxtl/image_4.jpg')}}" class="gallery image-popup img d-flex align-items-center" style="background-image: url({{asset('images/foxtl/image_4.jpg')}});">
-							<div class="icon mb-4 d-flex align-items-center justify-content-center">
-    						<span class="icon-instagram"></span>
-    					</div>
-						</a>
-					</div>
-            </div>
-    	</div>
-    </section>
-    {{-- END galery --}}
-@endsection

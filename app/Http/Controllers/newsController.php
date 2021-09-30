@@ -79,7 +79,7 @@ class newsController extends Controller
     {
         $post = Berita::find($id);
          // dd($postlist);
-        return view('layouts.news.detailnewsfox', compact('post'));
+        return view('layouts.news.detailnewsfox', compact('post'), ["title" => "News"]);
     }
 
     /**
