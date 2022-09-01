@@ -9,7 +9,7 @@
 
 ## Dokumentasi Aplikasi
 
-Aplikasi ini adalah contoh aplikasi sebuah Organisasi UKM Bahasa FLAT UIN Jakarta yang mana bergerak di bidang kebahasaaan, pada aplikasi ini terdapat sistem login user dan admin yang dimana bisa di edit sendiri profile user maupun adminnya, selain itu terdapat fitur news(berita) dan kita bisa memasukkan komentar dari news tersebut, kemudian bisa membuat Jumbotron yang ada dihalaman home kemudian membuat quotes yang ada di halaman home di bagian bawah, aplikasi ini sudah menggunakan blade template dan juga sudahmemakai mysql untuk databasenya dan terdapat relasi one to one dan one to many.
+Aplikasi ini adalah contoh aplikasi uji coba sebuah Organisasi UKM Bahasa FLAT UIN Jakarta yang mana bergerak di bidang kebahasaaan, pada aplikasi ini terdapat sistem login user dan admin yang dimana bisa di edit sendiri profile user maupun adminnya, selain itu terdapat fitur news(berita) dan kita bisa memasukkan komentar dari news tersebut, kemudian bisa membuat Jumbotron yang ada dihalaman home kemudian membuat quotes yang ada di halaman home di bagian bawah, aplikasi ini sudah menggunakan blade template dan juga sudahmemakai mysql untuk databasenya dan terdapat relasi one to one dan one to many.
 
 ## Panduan Instalisasi
 
@@ -17,11 +17,11 @@ Aplikasi ini adalah contoh aplikasi sebuah Organisasi UKM Bahasa FLAT UIN Jakart
 2. cd ke folder aplikasi dan bash git "code ."
 3. buka terminal di vscode dan ketik "composer install"
 4. install dependencies dengan cara "npm install"
-5. copy .env example dengan cara "cp .env.example .env"
-6. generate enkripsi key "php artisan key:generate"
-7. sesuaikan "DB_DATABASE=flaters_db" di .env kemudian buat database di mysql dengan nama "flaters_db" dan sebelum itu nyalakan xamppnya
-8. migrate databasenya "php artisan migrate"
-9. kemudian jalankan laravelnya dengan "php artisan serve"
-10. lihat di local servernya
+5. generate enkripsi key "php artisan key:generate"
+6. sesuaikan "DB_DATABASE=flaters_db" di .env kemudian buat database di mysql dengan nama "flaters_db" dan sebelum itu nyalakan xamppnya
+7. migrate databasenya "php artisan migrate"
+8. kemudian jalankan laravelnya dengan "php artisan serve"
+9. lihat di local servernya
 
-## 
+## Link Deploy Website
+None
