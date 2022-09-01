@@ -13,7 +13,15 @@ Aplikasi ini adalah contoh aplikasi sebuah Organisasi UKM Bahasa FLAT UIN Jakart
 
 ## Panduan Instalisasi
 
-1. git clone
-2. sad
-3. asdw
-4. sd
+1. git clone https://github.com/My-Dios/flat-app.git
+2. cd ke folder aplikasi dan bash git "code ."
+3. buka terminal di vscode dan ketik "composer install"
+4. install dependencies dengan cara "npm install"
+5. copy .env example dengan cara "cp .env.example .env"
+6. generate enkripsi key "php artisan key:generate"
+7. sesuaikan "DB_DATABASE=flaters_db" di .env kemudian buat database di mysql dengan nama "flaters_db" dan sebelum itu nyalakan xamppnya
+8. migrate databasenya "php artisan migrate"
+9. kemudian jalankan laravelnya dengan "php artisan serve"
+10. lihat di local servernya
+
+## 
