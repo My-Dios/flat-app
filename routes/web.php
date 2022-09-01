@@ -62,15 +62,11 @@ Route::put('/profile/{id}', 'ProfileController@update');
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('admin/home', 'HomeController@adminHome')->name('admin.home')->middleware('is_admin');
+Route::get('auth/google', 'Auth\GoogleController@redirectToGoogle');
+Route::get('auth/google/callback', 'Auth\GoogleController@handleGoogleCallback');
 
 // // Route Comments
 Route::resource('comment', 'CommentController')->middleware('auth');
 
-// // Route Course
-Route::get('/course', function () {
-    $featuredSeries = Series::take(3)->latest()->get();
-    return view('layouts.course.coursefox', compact('featuredSeries'));
-});
 
-Route::resource('/series', 'SeriesController');
-
+?>

@@ -41,7 +41,7 @@
 	        <ul class="navbar-nav mr-auto">
                 {{-- @yield('navbar') --}}
                 <li class="nav-item {{($title === "Home") ? "active" : ""}}"><a href="/" class="nav-link">Home</a></li>
-                <li class="nav-item {{($title === "Course") ? "active" : ""}}"><a href="/course" class="nav-link">Courses</a></li>
+                <li class="nav-item {{($title === "Course") ? "active" : ""}}"><a href="/#" class="nav-link">Courses</a></li>
                 <li class="nav-item {{($title === "Flatmart") ? "active" : ""}}"><a href="/#" class="nav-link">Flatmart</a></li>
                 <li class="nav-item {{($title === "News") ? "active" : ""}}"><a href="/news" class="nav-link">News</a></li>
                 <li class="nav-item {{($title === "Events") ? "active" : ""}}"><a href="/#" class="nav-link">Events</a></li>

@@ -10,12 +10,15 @@ use App\Profile;
 use App\Testimony;
 use File;
 use Auth;
+use Carbon\Carbon;
 
 class indexController extends Controller
 {
     public function indexnews()
     {
-        $post= Berita::orderBy('created_at','desc')->get();
+        // $current = Carbon::now();
+
+        $post= Berita::orderBy('created_at', 'desc')->get();
         return view('layouts.news.newsfox', compact('post'), ["title" => "News"]);
     }
 
