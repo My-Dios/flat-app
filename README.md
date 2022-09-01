@@ -7,6 +7,13 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
-## About Laravel
+## Dokumentasi Aplikasi
 
-Halo
+Aplikasi ini adalah contoh aplikasi sebuah Organisasi UKM Bahasa FLAT UIN Jakarta yang mana bergerak di bidang kebahasaaan, pada aplikasi ini terdapat sistem login user dan admin, selain itu terdapat fitur news(berita) dan kita bisa memasukkan komentar dari news tersebut, kemudian bisa membuat Jumbotron yang ada dihalaman home kemudian membuat quotes yang ada di halaman home di bagian bawah, aplikasi ini sudah menggunakan blade template dan juga sudahmemakai mysql untuk databasenya dan terdapat relasi one to one dan one to many.
+
+## Panduan Instalisasi
+
+1. asdas
+2. sad
+3. asdw
+4. sd
