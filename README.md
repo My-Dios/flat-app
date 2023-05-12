@@ -109,11 +109,14 @@ add this `?terminalID=GK01-001` to the link `http://localhost:4500/login` so it 
 
 <b>5. Login</b> 
 <br>
-Login with the pin that was created in the previous starbucks-backend project
+Login with the PIN that was created in the previous starbucks-backend project
 
 <b>6. Setup Cash Drawer</b> 
 <br>
-
+Run SQL Script to add Cashdrawer in MySQL Workbench
+```sql
+INSERT INTO `fnb_sbux_2`.`ms_cashdrawer` (`cashDrawerID`, `cashDrawerName`, `createdDate`, `editedBy`, `editedDate`) VALUES (NULL, 'CDN-01', NULL, NULL, NULL);
+```
 
 
 ## Version
