@@ -15,7 +15,7 @@
 
 ### Setting Up a Project
 <b>Clone the project</b>
-
+clone into `C:\Apache24\htdocs`
 ```bash
 git clone https://gitlab.esb.co.id/custom/starbucks/starbucks-pos.git
 ```
