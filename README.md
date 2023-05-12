@@ -117,6 +117,7 @@ Run SQL Script to add Cashdrawer in MySQL Workbench
 ```sql
 INSERT INTO `fnb_sbux_2`.`ms_cashdrawer` (`cashDrawerID`, `cashDrawerName`, `createdDate`, `editedBy`, `editedDate`) VALUES (NULL, 'CDN-01', NULL, NULL, NULL);
 ```
+then Assign Cashdrawer
 
 
 ## Version
