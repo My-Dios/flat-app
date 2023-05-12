@@ -95,11 +95,13 @@ ng serve
 Change to `http://localhost:4500/install`
 <br>
 
-<b>2. Input</b> 
+<b>3. Input</b> 
 <br>
-**API URL:** 7.2 or 7.4
-<br>
-**API Key:** 7.2 or 7.4
+<ul>
+    <li>API URL : http://localhost/starbucks-backend</li>
+    <li>API Key : authsci</li>
+    <li>Branch : STARBUCKS KOTA HARAPAN INDAH</li>
+</ul>
 
 
 ## Version
