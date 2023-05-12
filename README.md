@@ -21,11 +21,13 @@ clone into `C:\Apache24\htdocs`
 git clone https://gitlab.esb.co.id/custom/starbucks/starbucks-pos.git
 ```
 
-<b>Configuration</b> 
+<b>Create 2 new schema</b> 
 <br>
-Create the following file for local environment configuration:  
-- `api/config/db_local.php`
-- `api/config/params_local.php`
+Open MySQL Workbench and create 2 schema:  
+<ol>
+    <li>fnb_sbux_4</li>
+    <li>fnb_sbux_2</li>
+</ol>
 
 
 ## Version
