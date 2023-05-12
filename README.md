@@ -93,10 +93,11 @@ ng serve
 <br>
 Change to `http://localhost:4500/install`
 <br>
-<b>2. Input API URL and API Key </b> 
+<b>2. Input</b> 
 <br>
-**PHP:** 7.2 or 7.4
-**PHP:** 7.2 or 7.4
+**API URL:** 7.2 or 7.4
+<br>
+**API Key:** 7.2 or 7.4
 
 
 ## Version
