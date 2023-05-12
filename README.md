@@ -121,6 +121,7 @@ INSERT INTO `fnb_sbux_2`.`ms_cashdrawer` (`cashDrawerID`, `cashDrawerName`, `cre
 ```
 Then Assign Cashdrawer in POS
 
+<b>7. Finally, you can use Starbucks POS ^_^</b> 
 
 ## Version
 | Version | Date &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Update |
