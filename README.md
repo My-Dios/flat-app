@@ -32,11 +32,11 @@ Open MySQL Workbench and create 2 schema:
 <b>Configuration</b>
 <br>
 Create the following file for local environment configuration:  
-- `api/config/db.php`
-- `frontend/src/assets/params.json` (adjust localhost port with php version >= 7.2.11)
+- `starbucks-pos/api/config/db.php`
+- `starbucks-pos/frontend/src/assets/params.json` (adjust localhost port with php version >= 7.2.11)
 
 ```php
-# api/config/db.php
+# starbucks-pos/api/config/db.php
 <?php 
         
 return [
@@ -57,11 +57,17 @@ return [
 ];
 ```
 ```json
-# frontend/src/assets/params.json
+# starbucks-pos/frontend/src/assets/params.json
 {
   "httpBaseUrl": "http://localhost:82/starbucks-pos/api/web/v1",
   "webSocketUrl": "ws://localhost:8081"
 }
+```
+<b>Migration</b>
+<br>
+Run Migration in `starbucks-pos/api`
+```bash
+php yii migrate
 ```
 
 
