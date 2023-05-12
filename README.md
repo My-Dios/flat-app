@@ -110,6 +110,8 @@ add this `?terminalID=GK01-001` to the link `http://localhost:4500/login` so it 
 <b>5. Login</b> 
 <br>
 Login with the PIN that was created in the previous starbucks-backend project
+<br>
+If you can't login POS, please sync first
 
 <b>6. Setup Cash Drawer</b> 
 <br>
