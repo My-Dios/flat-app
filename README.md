@@ -103,6 +103,10 @@ Change to `http://localhost:4500/install`
     <li>Branch : STARBUCKS KOTA HARAPAN INDAH</li>
 </ul>
 
+<b>3. Set terminalID</b> 
+<br>
+add this `?terminalID=GK01-001` to the link `http://localhost:4500/login` so it becomes `http://localhost:4500/login?terminalID=GK01-001`
+
 
 ## Version
 | Version | Date &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Update |
