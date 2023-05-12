@@ -115,11 +115,10 @@ Change to `http://localhost:4500/install`
     </li>
 </ul>
 You can run SQL Script for obtained API Key
-<br>
+
 ```sql
 select companyAuthKey from esb_main_sbux.ms_company;
 ```
-<br>
 
 <b>4. Set terminalID</b> 
 <br>
