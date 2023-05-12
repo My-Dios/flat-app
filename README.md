@@ -87,8 +87,10 @@ ng serve
 ```
 
 ### Usage a Project
-<b>1. Run the project</b>
-<b>2. Change link</b>
+<b>1. Run the project</b> <br>
+<b>2. Change link to install </b> <br>
+Change to `http://localhost:4500/install`
+<b>2. Input API URL and API Key </b> <br>
 
 ## Version
 | Version | Date &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Update |
