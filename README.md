@@ -33,7 +33,7 @@ Open MySQL Workbench and create 2 schema:
 <br>
 Create the following file for local environment configuration:  
 - `starbucks-pos/api/config/db.php`
-- `starbucks-pos/frontend/src/assets/params.json` (adjust localhost port with php version >= 7.2.11)
+- `starbucks-pos/frontend/src/assets/params.json`
 
 ```php
 # starbucks-pos/api/config/db.php
@@ -59,7 +59,7 @@ return [
 ```json
 # starbucks-pos/frontend/src/assets/params.json
 {
-  "httpBaseUrl": "http://localhost:82/starbucks-pos/api/web/v1",
+  "httpBaseUrl": "http://localhost:82/starbucks-pos/api/web/v1",  //adjust localhost port with php version >= 7.2.11
   "webSocketUrl": "ws://localhost:8081"
 }
 ```
