@@ -119,6 +119,7 @@ You can run SQL Script for obtained API Key
 ```sql
 select companyAuthKey from esb_main_sbux.ms_company;
 ```
+<br>
 
 <b>4. Set terminalID</b> 
 <br>
