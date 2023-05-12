@@ -75,6 +75,16 @@ Install node_modules in directory `starbucks-pos/frontend`
 ```bash
 npm install
 ```
+<b>Run the project</b>
+<br>
+Run in directory `starbucks-pos/frontend`
+```bash
+npm start
+```
+or
+```bash
+ng serve
+```
 
 
 ## Version
