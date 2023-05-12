@@ -29,6 +29,33 @@ Open MySQL Workbench and create 2 schema:
     <li>fnb_sbux_2</li>
 </ol>
 
+<b>Configuration</b>
+<br>
+Create the following file for local environment configuration:  
+- `api/config/db.php`
+
+```php
+# api/config/db.php
+<?php 
+        
+return [
+    'dbMain' => [
+        'class' => 'yii\db\Connection',
+        'dsn' => 'mysql:host=127.0.0.1:3306;dbname=fnb_sbux_4',
+        'username' => 'root',
+        'password' => '',
+        'charset' => 'utf8',
+    ],
+    'db' => [
+        'class' => 'yii\db\Connection',
+        'dsn' => 'mysql:host=127.0.0.1:3306;dbname=fnb_sbux_2',
+        'username' => 'root',
+        'password' => '',
+        'charset' => 'utf8',
+    ]
+];
+```
+
 
 ## Version
 | Version | Date &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Update |
