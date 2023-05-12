@@ -95,7 +95,7 @@ ng serve
 Change to `http://localhost:4500/install`
 <br>
 
-<b>3. Input</b> 
+<b>3. Input and Submit</b> 
 <br>
 <ul>
     <li>API URL : http://localhost/starbucks-backend</li>
