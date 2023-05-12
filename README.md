@@ -33,6 +33,7 @@ Open MySQL Workbench and create 2 schema:
 <br>
 Create the following file for local environment configuration:  
 - `api/config/db.php`
+- `frontend/src/assets/params.json`
 
 ```php
 # api/config/db.php
@@ -54,6 +55,13 @@ return [
         'charset' => 'utf8',
     ]
 ];
+```
+```json
+# frontend/src/assets/params.json
+{
+  "httpBaseUrl": "http://localhost:82/starbucks-pos/api/web/v1",
+  "webSocketUrl": "ws://localhost:8081"
+}
 ```
 
 
