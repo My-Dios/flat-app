@@ -110,9 +110,7 @@ Change to `http://localhost:4500/install`
         <br>
         You can run SQL Script
         <br>
-        ```sql
-        select companyAuthKey from esb_main_sbux.ms_company;
-        ```
+        `select companyAuthKey from esb_main_sbux.ms_company;`
     </li>
     <li>
         Branch : STARBUCKS KOTA HARAPAN INDAH
