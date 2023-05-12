@@ -87,7 +87,8 @@ ng serve
 ```
 
 ### Usage a Project
-
+<b>1. Run the project</b>
+<b>2. Change link</b>
 
 ## Version
 | Version | Date &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Update |
