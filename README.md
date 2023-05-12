@@ -109,6 +109,7 @@ Change to `http://localhost:4500/install`
         The API Key can be obtained from the contents of the companyAuthKey column in the <a href="https://gitlab.esb.co.id/custom/starbucks/starbucks-backend"         target="_blank" rel="noopener noreferrer">starbucks-backend</a> database
         <br>
         You can run SQL Script
+        <br>
         ```sql
         select companyAuthKey from esb_main_sbux.ms_company;
         ```
