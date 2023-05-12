@@ -16,7 +16,7 @@
 ### Setting Up a Project
 <b>Clone the project</b>
 <br>
-clone into `C:\Apache24\htdocs`
+clone into directory `C:\Apache24\htdocs`
 ```bash
 git clone https://gitlab.esb.co.id/custom/starbucks/starbucks-pos.git
 ```
@@ -65,15 +65,15 @@ return [
 ```
 <b>Migration</b>
 <br>
-Run Migration in `starbucks-pos/api`
+Run Migration in directory `starbucks-pos/api`
 ```bash
 php yii migrate
 ```
 <b>Node Modules</b>
 <br>
-Install node_modules in `starbucks-pos/frontend`
+Install node_modules in directory `starbucks-pos/frontend`
 ```bash
-php yi
+npm install
 ```
 
 
