@@ -20,7 +20,7 @@
 git clone https://gitlab.esb.co.id/custom/starbucks/starbucks-pos.git
 ```
 
-<b>Configuration</b>
+<b>Configuration</b> <br>
 Create the following file for local environment configuration:  
 - `api/config/db_local.php`
 - `api/config/params_local.php`
