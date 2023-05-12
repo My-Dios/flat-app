@@ -31,3 +31,12 @@ None
 | :---:         |     :---:      | ---           |
 | `1.7.9`       | `2023-05-08`   | <ul><li>Fixing bugs empty bill number on non sales drive thru mode</li><li>Fixing bugs rewards can be applied on cancelled menu</li><li>Fixing bugs calculation on take off overwrite promo</li><li>Add multiple apply promo validation</li><li>Add duplicate sales payment data validation</li><li>Auto sync pos version</li></ul> |
 | `1.7.8`       | `2023-04-18`   | <ul><li>hotfix fix API Version MAP</li></ul> |
+| `1.7.7`       | `2023-04-13`   | <ul><li>Fixing bugs on Empty PLU Menu Combination When Apply Promotion</li><li>Optimize Print Payment</li><li>Enhance Save Cross Sales Date and Empty BillNum</li></ul> |
+| `1.7.6`       | `2023-03-23`   | <ul><li>Fixing bugs on re-apply Starbucks Rewards</li><li>Fixing bugs ODS on menu cancel</li><li>Fixing bugs calculate promo</li></ul> |
+| `1.7.5`       | `2023-03-15`   | <ul><li>Validation on Save Payment to Prevent Double Deduct on Starbucks Card</li><li>Print Top Up Receipt as Failed to Get Latest Balance</li><li>Fixing angular component not implement <b>OnDestroy</b></li></ul> |
+| `1.7.4`       | `2023-02-28`   | <ul><li>Enhance auto sync & auto sync sales</li></ul> |
+| `1.7.3`       | `2023-02-23`   | <ul><li>Change label</li></ul> |
+| `1.7.2`       | `2023-02-21`   | <ul><li>Bugfix when top up failed reload balance, add button reload balance</li><li>Bugfix ECR BCA for next payment</li><li>Bugfix multiple print at same transactions</li><li>Clear sales local storage on home payment</li></ul> |
+| `1.7.1`       | `2023-01-17`   | <ul><li>Hotfix edc top up bca</li></ul> |
+| `1.7.0`       | `2023-01-12`   | <ul><li>Decoupling payment and top up sbux card</li><li>ECR BCA</li><li>Print image in printer star SM-T300i</li><li>Customer voice not print in non sales transaction</li><li>Printing label for reserved outlet set by station or by head menu itself</li><li>Bug fix: Rewards not deducting grand total, rounding, unlock offer when cancel menu, payment more than grand total</li></ul> |
+| `1.6.5`       | `2022-12-14`   | <ul><li>Improved sbuxcard rewards validation</li></ul> |
