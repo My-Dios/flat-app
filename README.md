@@ -65,7 +65,7 @@ return [
     ]
 ];
 ```
-```json
+```script
 # starbucks-pos/frontend/src/assets/params.json
 {
   "httpBaseUrl": "http://localhost:82/starbucks-pos/api/web/v1",  //adjust localhost port with php version >= 7.2.11
