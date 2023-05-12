@@ -27,9 +27,9 @@ Aplikasi ini adalah contoh aplikasi uji coba sebuah Organisasi UKM Bahasa FLAT U
 
 
 ## Version
-| Version | <div style='width:50%'>Date</div>         | Update |
+| Version |      | Update |
 | :---:   |     :---:    | ---    |
-| `1.7.9` | `2023-05-08` | <ul><li>Fixing bugs empty bill number on non sales drive thru mode</li><li>Fixing bugs rewards can be applied on cancelled menu</li><li>Fixing bugs calculation on take off overwrite promo</li><li>Add multiple apply promo validation</li><li>Add duplicate sales payment data validation</li><li>Auto sync pos version</li></ul> |
+| `1.7.9` | <div style='width:50%'>`2023-05-08`</div> | <ul><li>Fixing bugs empty bill number on non sales drive thru mode</li><li>Fixing bugs rewards can be applied on cancelled menu</li><li>Fixing bugs calculation on take off overwrite promo</li><li>Add multiple apply promo validation</li><li>Add duplicate sales payment data validation</li><li>Auto sync pos version</li></ul> |
 | `1.7.8` | `2023-04-18` | <ul><li>hotfix fix API Version MAP</li></ul> |
 | `1.7.7` | `2023-04-13` | <ul><li>Fixing bugs on Empty PLU Menu Combination When Apply Promotion</li><li>Optimize Print Payment</li><li>Enhance Save Cross Sales Date and Empty BillNum</li></ul> |
 | `1.7.6` | `2023-03-23` | <ul><li>Fixing bugs on re-apply Starbucks Rewards</li><li>Fixing bugs ODS on menu cancel</li><li>Fixing bugs calculate promo</li></ul> |
