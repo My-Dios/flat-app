@@ -98,9 +98,26 @@ Change to `http://localhost:4500/install`
 <b>3. Input and Submit</b> 
 <br>
 <ul>
-    <li>API URL : http://localhost/starbucks-backend</li>
-    <li>API Key : authsci</li>
-    <li>Branch : STARBUCKS KOTA HARAPAN INDAH</li>
+    <li>
+        API URL : http://localhost/starbucks-backend
+        <br>
+        The API URL is obtained from the localhost <a href="https://gitlab.esb.co.id/custom/starbucks/starbucks-backend" target="_blank" rel="noopener                 noreferrer">starbucks-backend</a> link 
+    </li>
+    <li>
+        API Key : authsci
+        <br>
+        The API Key can be obtained from the contents of the companyAuthKey column in the <a href="https://gitlab.esb.co.id/custom/starbucks/starbucks-backend"         target="_blank" rel="noopener noreferrer">starbucks-backend</a> database
+        <br>
+        You can run SQL Script
+        ```sql
+        select companyAuthKey from esb_main_sbux.ms_company;
+        ```
+    </li>
+    <li>
+        Branch : STARBUCKS KOTA HARAPAN INDAH
+        <br>
+        You can choose freely but we recommend choosing that branch
+    </li>
 </ul>
 
 <b>4. Set terminalID</b> 
