@@ -15,12 +15,14 @@
 
 ### Setting Up a Project
 <b>Clone the project</b>
+<br>
 clone into `C:\Apache24\htdocs`
 ```bash
 git clone https://gitlab.esb.co.id/custom/starbucks/starbucks-pos.git
 ```
 
-<b>Configuration</b> <br>
+<b>Configuration</b> 
+<br>
 Create the following file for local environment configuration:  
 - `api/config/db_local.php`
 - `api/config/params_local.php`
