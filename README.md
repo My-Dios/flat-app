@@ -69,6 +69,12 @@ Run Migration in `starbucks-pos/api`
 ```bash
 php yii migrate
 ```
+<b>Node Modules</b>
+<br>
+Install node_modules in `starbucks-pos/frontend`
+```bash
+php yi
+```
 
 
 ## Version
