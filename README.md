@@ -125,6 +125,7 @@ select companyAuthKey from esb_main_sbux.ms_company;
 add this `?terminalID=GK01-001` to the link `http://localhost:4500/login` so it becomes `http://localhost:4500/login?terminalID=GK01-001`
 
 <b>5. Login</b> 
+<br>
 You must have a <a href="https://gitlab.esb.co.id/custom/starbucks/starbucks-backend" target="_blank" rel="noopener        noreferrer">starbucks-backend</a> account first
 <br>
 Login with the PIN that was created in the previous <a href="https://gitlab.esb.co.id/custom/starbucks/starbucks-backend" target="_blank" rel="noopener        noreferrer">starbucks-backend</a> project
