@@ -25,3 +25,9 @@ Aplikasi ini adalah contoh aplikasi uji coba sebuah Organisasi UKM Bahasa FLAT U
 
 ## Link Deploy Website
 None
+
+## Version
+| Version       | Date           | Update        |
+| :---          |     :---:      | :---          |
+| `1.7.9`       | `2023-05-08`   | <ul><li>Fixing bugs empty bill number on non sales drive thru mode</li><li>Fixing bugs rewards can be applied on cancelled menu</li><li>Fixing bugs calculation on take off overwrite promo</li><li>Add multiple apply promo validation</li><li>Add duplicate sales payment data validation</li><li>Auto sync pos version</li></ul>|
+| `1.7.8`       | `2023-04-18`   | <ul><li>hotfix fix API Version MAP</li></ul>|
