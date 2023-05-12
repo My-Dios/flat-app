@@ -89,10 +89,12 @@ ng serve
 ### Usage a Project
 <b>1. Run the project</b> 
 <br>
+
 <b>2. Change link to install </b> 
 <br>
 Change to `http://localhost:4500/install`
 <br>
+
 <b>2. Input</b> 
 <br>
 **API URL:** 7.2 or 7.4
