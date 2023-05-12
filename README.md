@@ -2,12 +2,13 @@
 
 
 ## System Requirement
-
 **System Operations:** Windows or Unix Base
 
 **PHP:** >= 7.2.11
 
 **MySQL:** 5.6
+
+**NodeJS:** >= 18.4.1
 
 ## Development Setup
 
