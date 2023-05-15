@@ -1,5 +1,17 @@
-# Starbucks POS
+# Starbucks ODS
+<div align="center" style='text-align : center;'>
+  <img src="src/assets/images/esb-shine.gif" alt="sbux-ods" width="250px"/>
+  <br>
+  <i>One Comunity, Respect For All</i>
+  <br>
+</div>
 
+<br>
+<div align="center">
+<img src="https://img.shields.io/badge/version-v1.0.0-blue" />
+<img src="https://img.shields.io/badge/license-ESB-green" />
+<img src="https://img.shields.io/badge/contributors-34-brightgreen" />
+</div>
 
 ## System Requirement
 **System Operations:** Windows or Unix Base
@@ -8,7 +20,7 @@
 
 **MySQL:** 5.6
 
-**NodeJS:** >= 18.4.1
+**NodeJS:** >= 14.17.1
 
 ## Development Setup
 
@@ -18,7 +30,6 @@
     <li><a href="https://docs.google.com/document/d/10Xvm_m-IcQFSjnP-zyUdUItCayjlEMzU/edit?usp=sharing&ouid=101904115063108684048&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer">Apache24 Web Server</a></li>
     <li><a href="https://docs.google.com/document/d/14UVW91EwH2znZdFcBIESF9zNCw23diPG/edit?usp=sharing&ouid=101904115063108684048&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer">Node JS & Angular</a></li>
     <li><a href="https://www.freecodecamp.org/news/node-version-manager-nvm-install-guide/" target="_blank" rel="noopener noreferrer">NVM</a></li>
-    <li><a href="https://dev.mysql.com/downloads/workbench/" target="_blank" rel="noopener noreferrer">MySQL Workbench</a></li>
     <li><a href="https://gitlab.esb.co.id/custom/starbucks/starbucks-backend" target="_blank" rel="noopener noreferrer">starbucks-backend</a></li>
 </ul>
 
@@ -27,7 +38,7 @@
 <br>
 clone into directory `C:\Apache24\htdocs`
 ```bash
-git clone https://gitlab.esb.co.id/custom/starbucks/starbucks-pos.git
+git clone https://gitlab.esb.co.id/custom/starbucks/starbucks-ods.git
 ```
 
 <b>Create 2 new schema</b> 
@@ -45,7 +56,6 @@ Create the following file for local environment configuration:
 - `starbucks-pos/frontend/src/assets/params.json`
 
 ```php
-# starbucks-pos/api/config/db.php
 <?php 
         
 return [
@@ -66,7 +76,6 @@ return [
 ];
 ```
 ```json
-# starbucks-pos/frontend/src/assets/params.json
 {
   "httpBaseUrl": "http://localhost:82/starbucks-pos/api/web/v1",  //adjust localhost port with php version >= 7.2.11
   "webSocketUrl": "ws://localhost:8081"
@@ -151,9 +160,18 @@ Then Assign Cashdrawer in POS
 
 <b>7. Finally, you can use Starbucks POS ^_^</b> 
 
+## Drive Thru Mode
+Make sure you must have a different web browser, and run this link in every different browser
+### Order Display Only
+`http://localhost:4500/login?terminalID=GK01-001&driveThruMode=order`
+### Payment Display Only
+`http://localhost:4500/login?terminalID=GK01-001&driveThruMode=payment`
+### Order & Payment Display
+`http://localhost:4500/login?terminalID=GK01-001&driveThruMode=orderpayment`
+
 ## Version
-| Version | Date &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Update |
-| :---:   |     :---:    | --- |
+| Version | Date         | Update |
+| :---:   |     :---:    |  ---   |
 | `1.7.9` | `2023-05-08` | <ul><li>Fixing bugs empty bill number on non sales drive thru mode</li><li>Fixing bugs rewards can be applied on cancelled menu</li><li>Fixing bugs calculation on take off overwrite promo</li><li>Add multiple apply promo validation</li><li>Add duplicate sales payment data validation</li><li>Auto sync pos version</li></ul> |
 | `1.7.8` | `2023-04-18` | <ul><li>Hotfix fix API Version MAP</li></ul> |
 | `1.7.7` | `2023-04-13` | <ul><li>Fixing bugs on Empty PLU Menu Combination When Apply Promotion</li><li>Optimize Print Payment</li><li>Enhance Save Cross Sales Date and Empty BillNum</li></ul> |
