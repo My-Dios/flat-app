@@ -1,6 +1,6 @@
 # Starbucks ODS
 <div align="center" style='text-align : center;'>
-  <img src="src/assets/images/esb-shine.gif" alt="sbux-ods" width="250px"/>
+  <img src="src/assets/images/icons/icon-512x512.png" alt="sbux-ods" width="250px"/>
   <br>
   <i>One Comunity, Respect For All</i>
   <br>
